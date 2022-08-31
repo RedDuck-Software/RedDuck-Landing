@@ -1,0 +1,44 @@
+.intro {
+  padding: 4.125rem 9.375rem 18.625rem 9.375rem;
+  position: relative;
+  &-left {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-size: 3.25rem;
+      font-weight: 700;
+      max-width: 46.125rem;
+      margin: 2.5rem 0;
+      background: linear-gradient(90deg, #E30613 0%, #F6B6B2 39.2%, #FFF0C8 73.88%, #FFFCF1 95.51%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &-right {
+
+  }
+  &-chart {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+  }
+  &-scroll {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      transform: rotate(-90deg);
+      color: #C2B0B4;
+      font-size: 1.3125rem;
+      letter-spacing: 0.15em;
+      line-height: 1.625rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
