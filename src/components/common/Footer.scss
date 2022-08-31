@@ -1,0 +1,124 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  &-parts {
+    display: flex;
+    align-items: center;
+    column-gap: 21.625rem;
+    padding: 0 9.375rem 3rem 9.375rem;
+    &-left {
+      svg {
+        width: 30rem;
+      }
+      p {
+        color: #8E99B9;
+        font-size: 1.125rem;
+      }
+    }
+    &-right {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.25rem;
+      align-items: flex-end;
+      &-pages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 8.5rem;
+        row-gap: 1.5rem;
+        column-gap: 7.75rem;
+        width: 40rem;
+        p {
+          margin: 0;
+          font-size: 1.3125rem;
+          position: relative;
+          cursor: pointer;
+          transition: .2s ease-in-out;
+          &:hover {
+            color: #FC000E;
+            &::before {
+              opacity: 0;
+            }
+            &::after {
+              opacity: 1;
+            }
+          }
+          &::before {
+            content: '';
+            background-image: url('./../../assets/img/icons/blue-arrow-icon.svg');
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: -40px;
+            transform: translateY(-50%);
+            z-index: 4;
+            width: 1.4rem;
+            height: 1.3rem;
+            transition: .2s ease-in-out;
+          }
+          &::after {
+            content: '';
+            background-image: url('./../../assets/img/icons/red-arrow-icon.svg');
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: -43px;
+            transform: translateY(-50%);
+            z-index: 4;
+            width: 1.6rem;
+            height: 1.3rem;
+            opacity: 0;
+            transition: .2s ease-in-out;
+          }
+        }
+      }
+      &-socials {
+        display: flex;
+        align-items: center;
+        column-gap: 2.75rem;
+        &-icon {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 3.625rem;
+          height: 3.625rem;
+          cursor: pointer;
+          &::before {
+            content: '';
+            background-image: url('./../../assets/img/icons/social-button-inactive.svg');
+            background-size: cover;
+            position: absolute;
+            width: 3.625rem;
+            height: 3.625rem;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: .2s ease-in-out;
+          }
+          &::after {
+            content: '';
+            background-image: url('./../../assets/img/icons/social-button-active.svg');
+            background-size: cover;
+            position: absolute;
+            width: 3.625rem;
+            height: 3.625rem;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0;
+            transition: .2s ease-in-out;
+          }
+        }
+        .footer-parts-right-socials-icon:hover {
+          &::before {
+            opacity: 0;
+          }
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
