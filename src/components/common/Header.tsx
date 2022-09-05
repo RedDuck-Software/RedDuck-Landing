@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Texture } from './../shared/Texture';
 import './Header.scss';
  
@@ -7,7 +8,7 @@ export const Header = () => {
     <header>
       <Texture textureStyles={{left: '-552px', top: '-670px'}}/>
       <nav>
-        <li>Expertise</li>
+        <li><Link to="/expertise">Expertise</Link></li>
         <li>Services</li>
         <li>cases</li>
         <li>Career</li>
