@@ -18,7 +18,7 @@ export const Intro = () => {
         <Texture textureStyles={{left: '870px', top: '30px', transform: 'scale(0.5)'}}/>
         <Texture textureStyles={{left: '870px', top: '30px'}}/>
       </div>
-      <img src={introChart} className="intro-chart" />
+      <img src={introChart} className="intro-chart" alt="intro-chart" />
       <div className="intro-scroll">
         <p>scroll</p>
         <ArrowLeft />
