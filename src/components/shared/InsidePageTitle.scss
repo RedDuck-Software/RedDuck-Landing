@@ -10,6 +10,7 @@
   font-weight: 300;
   font-style: inherit;
   text-transform: capitalize;
+  position: relative;
   &::after {
     content: '';
     width: 50.3125rem;
@@ -46,6 +47,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 6.125rem;
   &::after {
     content: '';
     width: 100%;
