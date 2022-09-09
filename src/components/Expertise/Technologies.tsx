@@ -242,9 +242,9 @@ export const Technologies = () => {
       <div className="technologies-cards">
         {
           TechnologiesCards.map((item, index) => (
-            ((index + 1) % 3 == 0 ?
+            ((index + 1) % 3 === 0 ?
             <>
-              <hr />
+              <hr key={item.id + 'hr'}/>
               <div key={item.id} className="technologies-cards-item" id="header">
                 <div className="technologies-cards-item-wrapper">
                   <div className="technologies-cards-item-number">{item.id}</div>
@@ -264,7 +264,7 @@ export const Technologies = () => {
                   </div>
                 </div>
               </div>
-              <hr />
+              <hr key={item.id + 'hr' + '2'}/>
             </>
             :
             <div key={item.id} className="technologies-cards-item" id="header">
