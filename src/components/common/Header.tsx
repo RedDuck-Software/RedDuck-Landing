@@ -9,7 +9,7 @@ export const Header = () => {
       <Texture textureStyles={{left: '-552px', top: '-670px'}}/>
       <nav>
         <li><Link to="/expertise">Expertise</Link></li>
-        <li>Services</li>
+        <li><Link to="/services">Services</Link></li>
         <li>cases</li>
         <li>Career</li>
         <li>Education</li>
