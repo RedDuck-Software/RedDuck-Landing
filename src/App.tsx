@@ -6,6 +6,7 @@ import { Home } from './pages/Home';
 import { Expertise } from './pages/Expertise';
 import { Services } from './pages/Services';
 import { Cases } from './pages/Cases';
+import { Career } from './pages/Career';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
         <Route path="expertise" element={<Expertise/>} />
         <Route path="services" element={<Services/>} />
         <Route path="cases" element={<Cases/>} />
+        <Route path="career" element={<Career/>} />
       </Routes>
       <Footer />
     </div>
