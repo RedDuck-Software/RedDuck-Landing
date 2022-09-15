@@ -8,6 +8,8 @@ import { Services } from './pages/Services';
 import { Cases } from './pages/Cases';
 import { Career } from './pages/Career';
 import { Education } from './pages/Education';
+import { Contacts } from './pages/Contacts';
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,7 @@ function App() {
         <Route path="cases" element={<Cases/>} />
         <Route path="career" element={<Career/>} />
         <Route path="education" element={<Education/>} />
+        <Route path="contacts" element={<Contacts/>} />
       </Routes>
       <Footer />
     </div>

@@ -14,7 +14,7 @@ export const Header = () => {
         <li><Link to="/career">Career</Link></li>
         <li><Link to="/education">Education</Link></li>
         <li>Blog</li>
-        <li>Contact us</li>
+        <li><Link to="/contacts">Contact us</Link></li>
         <li>About us</li>
         <li className='lang-changer'>En</li>
       </nav>
