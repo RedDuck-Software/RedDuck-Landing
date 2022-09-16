@@ -1,0 +1,26 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8.125rem;
+    margin-top: -7rem;
+    &-title {
+      font-size: 3.25rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #E30613 0%, #F6B6B2 39.2%, #FFF0C8 73.88%, #FFFCF1 95.51%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      max-width: 51.625rem;
+    }
+    img {
+      width: 33.4375rem;
+      height: 34.375rem;
+      object-fit: contain;
+    }
+  }
+}

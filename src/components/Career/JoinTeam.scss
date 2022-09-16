@@ -1,0 +1,44 @@
+.join-team {
+  position: absolute;
+  left: 50%;
+  top: 30.625rem;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    font-size: 4.875rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #E30613 0%, #F6B6B2 39.2%, #FFF0C8 73.88%, #FFFCF1 95.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  button {
+    font-size: 2.625rem;
+    font-weight: 600;
+    background: linear-gradient(270deg, #AA000A 4.19%, #BC000B 31.34%, #D40410 65.96%, #FA0B19 97.68%);
+    box-shadow: 0px 5px 0px #980009, 0px 24px 19px rgba(0, 0, 0, 0.46);
+    border-radius: 56.5px;
+    border: 2px solid #EF202C;
+    color: #fff;
+    padding: 1.5rem 3.375rem 1.5rem 5.125rem;
+    line-height: 3.25rem;
+    cursor: pointer;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0.5rem;
+      top: 50%;
+      width: 3.5125rem;
+      height: 1.7rem;
+      transform: translateY(-50%);
+      background-image: url('./../../assets/img/icons/white-right-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  }
+}

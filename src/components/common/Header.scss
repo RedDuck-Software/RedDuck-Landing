@@ -12,6 +12,10 @@ header {
     li {
       list-style: none;
       cursor: pointer;
+      white-space: nowrap;
+      a {
+        white-space: nowrap;
+      }
     }
     .lang-changer {
       background: 

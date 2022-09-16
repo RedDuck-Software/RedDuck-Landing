@@ -1,0 +1,55 @@
+.logo-with-hands {
+  display: flex;
+  justify-content: center;
+  column-gap: 2.625rem;
+  position: relative;
+  margin-bottom: 1.875rem;
+  &-logo {
+    height: 25.625rem;
+  }
+  &-hands {
+    &-red {
+      position: absolute;
+      width: 180rem;
+      height: 53.75rem;
+      object-fit: contain;
+      left: -1218px;
+      top: -170px;
+    }
+    &-blue {
+      position: absolute;
+      width: 180rem;
+      height: 53.75rem;
+      object-fit: contain;
+      left: 208px;
+      top: -170px;
+    }
+  }
+  &-gear {
+    position: absolute;
+    img {
+      width: 7.25rem;
+      height: 7.25rem;
+      animation: rotation 40s linear infinite;
+    }
+    img:first-child {
+      position: absolute;
+      top: 140px;
+      left: -470px;
+    }
+    img:last-child {
+      position: absolute;
+      top: -6px;
+      left: 240px;
+    }
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
