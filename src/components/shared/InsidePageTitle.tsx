@@ -6,7 +6,6 @@ import { ReactComponent as RedArrowIcon } from './../../assets/img/icons/red-arr
 export const InsidePageTitle = (props: any) => {
   const navigate = useNavigate();
   const location = useLocation()
-  console.log(location)
 
   return (
     <>
