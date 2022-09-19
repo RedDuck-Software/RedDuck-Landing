@@ -10,7 +10,6 @@ import { ReactComponent as IllustrationTop3 } from './../../assets/img/illustrat
 import { ReactComponent as IllustrationBottom3 } from './../../assets/img/illustrations/mission-bottom-3.svg';
 import { Texture } from './../shared/Texture';
 import { ScrollArrow } from '../shared/ScrollArrow';
-import { transform } from 'typescript';
 
 export const Mission = () => {
   return (
