@@ -15,6 +15,7 @@ import UpworkLogoGradient from './../../assets/img/upwork-logo-gradient.png';
 import TwitterLogoGradient from './../../assets/img/twitter-logo-gradient.png';
 import FacebookLogoGradient from './../../assets/img/facebook-logo-gradient.png';
 import EmailLogoGradient from './../../assets/img/e-mail-logo-gradient.png';
+import { Texture } from "../shared/Texture";
 import './ContactsLinks.scss';
 
 export const ContactsLinks = () => {
@@ -91,6 +92,7 @@ export const ContactsLinks = () => {
           ))
         }
       </div>
+      <Texture textureStyles={{left: '-70%', top: '-50%', transform: 'scale(0.7)'}}/>
     </section>
   )
 }

@@ -41,7 +41,7 @@ export const ServicesList = () => {
           ))
         }
       </div>
-      <Texture textureStyles={{left: '30%', top: '22%'}}/>
+      <Texture textureStyles={{left: '50%', top: '30%', transform: 'translateX(-50%) scale(0.7)'}}/>
       <ScrollArrow />
     </section>
   )

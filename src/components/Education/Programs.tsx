@@ -6,6 +6,7 @@ import MentoringImg from './../../assets/img/mentoring.png';
 import ClubImg from './../../assets/img/club.png';
 import EnglishCoursesImg from './../../assets/img/englishCourses.png';
 import TeamBuildingImg from './../../assets/img/teamBuilding.png';
+import { Texture } from "../shared/Texture";
 import './Programs.scss';
 
 export const Programs = () => {
@@ -55,6 +56,7 @@ export const Programs = () => {
           ))
         }
       </div>
+      <Texture textureStyles={{left: '-70%', top: '0%', transform: 'scale(0.7)'}}/>
     </section>
   )
 }

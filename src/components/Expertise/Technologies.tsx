@@ -238,7 +238,6 @@ export const Technologies = () => {
   return (
     <section className="technologies">
       <SectionTitle>Technologies</SectionTitle>
-      <Texture textureStyles={{left: '30%', top: '50%'}}/>
       <div className="technologies-cards">
         {
           TechnologiesCards.map((item, index) => (
@@ -289,7 +288,7 @@ export const Technologies = () => {
           )))
         }
       </div>
-      <Texture textureStyles={{left: '30%', top: '50%'}}/>
+      <Texture textureStyles={{left: '50%', top: '20%', transform: 'translateX(-50%) scale(0.8)'}}/>
     </section>
   )
 }

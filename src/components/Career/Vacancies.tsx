@@ -41,7 +41,7 @@ export const Vacancies = () => {
           ))
         }
       </div>
-      <Texture textureStyles={{left: '-650px', top: '400px'}}/>
+      <Texture textureStyles={{left: '-70%', top: '-20%', transform: 'scale(0.7)'}}/>
     </section>
   )
 }

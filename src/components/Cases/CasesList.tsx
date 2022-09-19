@@ -237,7 +237,7 @@ export const CasesList = () => {
           )))
         }
       </div>
-      <Texture textureStyles={{left: '27%', top: '50%'}}/>
+      <Texture textureStyles={{left: '50%', top: '0', transform: 'translateX(-50%) scale(0.7)'}}/>
     </section>
   )
 }

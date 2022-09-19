@@ -45,7 +45,7 @@ export const Mission = () => {
           </p>
         </div>
       </div>
-      <Texture textureStyles={{right: '-650px', top: '200px'}}/>
+      <Texture textureStyles={{right: '-1000px', top: '50%', transform: 'translateY(-50%) scale(0.5)'}}/>
       <ScrollArrow />
     </section>
   )

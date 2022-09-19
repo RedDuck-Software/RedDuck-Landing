@@ -1,6 +1,7 @@
 .texture {
   position: absolute;
   z-index: -10;
+  transform: scale(0.5);
   img {
     animation: rotation 130s linear infinite;
   }
