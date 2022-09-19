@@ -66,7 +66,7 @@ export const OurTeam = () => {
           ourTeamList.map((item) => (
             <div key={item.id} className="our-team-list-item">
               <div className="our-team-list-item-wrapper">
-                <img src={item.src} alt="Person Picture" />
+                <img src={item.src} alt="Person" />
                 <div className="our-team-list-item-wrapper-name">{item.name}</div>
                 <div className="our-team-list-item-wrapper-position">{item.position}</div>
               </div>
