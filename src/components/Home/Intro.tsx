@@ -14,9 +14,9 @@ export const Intro = () => {
         <p> R&D company with proven expertise in Blockchain, Crypto, Trading, Fintech and Banking industries </p>
       </div>
       <div className="intro-right">
-        <Texture textureStyles={{left: '870px', top: '30px'}}/>
-        <Texture textureStyles={{left: '870px', top: '30px', transform: 'scale(0.5)'}}/>
-        <Texture textureStyles={{left: '870px', top: '30px'}}/>
+        <Texture textureStyles={{right: '-20rem', top: '-30rem', transform: 'scale(0.5)'}}/>
+        <Texture textureStyles={{right: '-20rem', top: '-30rem', transform: 'scale(0.3)'}}/>
+        <Texture textureStyles={{right: '-20rem', top: '-30rem', transform: 'scale(0.15)'}}/>
       </div>
       <img src={introChart} className="intro-chart" alt='intro-chart'/>
       <div className="intro-scroll">

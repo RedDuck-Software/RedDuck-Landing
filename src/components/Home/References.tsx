@@ -32,9 +32,7 @@ export const References = () => {
             <img src={linkedinLogo} alt="Linked in" /></div> 
         </div>
       </div>
-      <Texture textureStyles={{left: '-610px', top: '180px'}}/>
-      <Texture textureStyles={{left: '-610px', top: '180px'}}/>
-      <Texture textureStyles={{left: '-610px', top: '180px'}}/>
+      <Texture textureStyles={{left: '-1000px', top: '50%', transform: 'translateY(-50%) scale(0.5)'}}/>
     </section>
   )
 }

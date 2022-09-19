@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className="footer-parts">
         <div className="footer-parts-left">
           <LogoHorizontal />
-          <p>© 2023. All rights reserved. <br/>22 Student Street, Kharkiv, Ukraine</p>
+          <p>© 2023. All rights reserved. <br/>Akademika Pavlova 155 Street, Kharkiv, Ukraine</p>
         </div>
         <div className="footer-parts-right">
           <div className="footer-parts-right-pages">
@@ -43,7 +43,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <Texture textureStyles={{left: '27%', bottom: '-730', transform: 'translateX(-50%)'}}/>
+      <Texture textureStyles={{left: '50%', bottom: '-1700px', transform: 'translateX(-50%) scale(1.1)'}}/>
       <img src={Logo} alt='Redduck logo' />
     </footer>
   )

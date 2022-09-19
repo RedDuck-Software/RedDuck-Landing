@@ -4,6 +4,7 @@ import { ScrollArrow } from "../shared/ScrollArrow";
 import OutTeam1 from './../../assets/img/ourTeam1.png';
 import OutTeam2 from './../../assets/img/ourTeam2.png';
 import OutTeam3 from './../../assets/img/ourTeam3.png';
+import { Texture } from "../shared/Texture";
 import './OurTeam.scss';
 
 export const OurTeam = () => {
@@ -83,6 +84,7 @@ export const OurTeam = () => {
       </div>
       <ScrollArrow />
       <button className="our-team-button">Contact us</button>
+      <Texture textureStyles={{left: '-70%', top: '10%', transform: 'scale(0.7)'}}/>
     </section>
   )
 }

@@ -6,7 +6,7 @@ import './Header.scss';
 export const Header = () => {
   return (
     <header>
-      <Texture textureStyles={{left: '-552px', top: '-670px'}}/>
+      <Texture textureStyles={{left: '-1050px', top: '-1000px', transform: 'scale(0.5)'}}/>
       <nav>
         <li><Link to="/expertise">Expertise</Link></li>
         <li><Link to="/services">Services</Link></li>

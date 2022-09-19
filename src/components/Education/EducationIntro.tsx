@@ -12,7 +12,7 @@ export const EducationIntro = () => {
           We make sure that our employees and everyone else can improve their knowledge and soft skills with RedDuck
         </div>
         <img src={EducationImg} alt="Education" />
-        <Texture textureStyles={{left: '51%', top: '27%'}}/>
+        <Texture textureStyles={{left: '75%', top: '35%', transform: 'translateX(-50%) scale(1.5)'}}/>
       </div>
       <ScrollArrow />
     </section>

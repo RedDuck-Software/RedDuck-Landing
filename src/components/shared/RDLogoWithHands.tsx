@@ -21,7 +21,7 @@ export const RDLogoWithHands = () => {
         <img src={HandRed} alt="Hand" className="logo-with-hands-hands-red"/>
         <img src={HandBlue} alt="Hand" className="logo-with-hands-hands-blue"/>
       </div>
-      <Texture textureStyles={{left: '27%', top: '50%'}}/>
+      <Texture textureStyles={{left: '50%', top: '-10%', transform: 'translateX(-50%) scale(0.7)'}}/>
     </>
   )
 }

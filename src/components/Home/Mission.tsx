@@ -10,6 +10,7 @@ import { ReactComponent as IllustrationTop3 } from './../../assets/img/illustrat
 import { ReactComponent as IllustrationBottom3 } from './../../assets/img/illustrations/mission-bottom-3.svg';
 import { Texture } from './../shared/Texture';
 import { ScrollArrow } from '../shared/ScrollArrow';
+import { transform } from 'typescript';
 
 export const Mission = () => {
   return (
@@ -45,7 +46,7 @@ export const Mission = () => {
           </p>
         </div>
       </div>
-      <Texture textureStyles={{right: '-650px', top: '200px'}}/>
+      <Texture textureStyles={{right: '-1000px', top: '50%', transform: 'translateY(-50%) scale(0.5)'}}/>
       <ScrollArrow />
     </section>
   )
