@@ -1,6 +1,5 @@
 .services-description {
   margin-top: 2.5rem;
-  margin-bottom: 18.75rem;
   &-list {
     display: flex;
     justify-content: center;
@@ -66,9 +65,10 @@
           
         }
         p {
-          font-size: 5.3rem;
+          font-size: 4.3rem;
           max-width: 50rem;
           font-weight: 600;
+          width: 85%;
           background: linear-gradient(270deg, #A31FA9 22.17%, #4A5FDB 48.39%, #13D5FF 87.48%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
