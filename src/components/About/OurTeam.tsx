@@ -10,7 +10,7 @@ export const OurTeam = () => {
   const ourTeamList = [
     {
       id: 0,
-      imageSrc: OutTeam1,
+      src: OutTeam1,
       name: 'Mark Virchenko',
       position: 'CTO',
       description: [
@@ -26,7 +26,7 @@ export const OurTeam = () => {
     },
     {
       id: 1,
-      imageSrc: OutTeam2,
+      src: OutTeam2,
       name: 'Evgeniy Kirichenko',
       position: 'COO',
       description: [
@@ -42,7 +42,7 @@ export const OurTeam = () => {
     },
     {
       id: 2,
-      imageSrc: OutTeam3,
+      src: OutTeam3,
       name: 'German Solovyov',
       position: 'CFO',
       description: [
@@ -66,7 +66,7 @@ export const OurTeam = () => {
           ourTeamList.map((item) => (
             <div key={item.id} className="our-team-list-item">
               <div className="our-team-list-item-wrapper">
-                <img src={item.imageSrc} alt="Person Picture" />
+                <img src={item.src} alt="Person Picture" />
                 <div className="our-team-list-item-wrapper-name">{item.name}</div>
                 <div className="our-team-list-item-wrapper-position">{item.position}</div>
               </div>
