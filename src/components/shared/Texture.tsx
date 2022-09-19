@@ -1,9 +1,11 @@
 import React from "react";
-import { ReactComponent as TextureElement } from "./../../assets/img/texture.svg";
+import TextureImg from "./../../assets/img/texture.png";
 import './Texture.scss';
 
 export const Texture = (props: any) => {
   return (
-    <TextureElement className="texture" style={props.textureStyles}/>
+    <div className="texture" style={props.textureStyles}>
+      <img src={TextureImg} alt="Texture" />
+    </div>
   )
 }

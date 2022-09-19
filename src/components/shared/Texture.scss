@@ -1,7 +1,9 @@
 .texture {
   position: absolute;
-  animation: rotation 130s linear infinite;
   z-index: -10;
+  img {
+    animation: rotation 130s linear infinite;
+  }
 }
 
 @keyframes rotation {
