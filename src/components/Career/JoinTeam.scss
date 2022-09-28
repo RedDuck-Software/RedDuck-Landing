@@ -8,12 +8,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  p {
-    font-size: 4.875rem;
+  h3 {
     font-weight: 600;
     background: linear-gradient(90deg, #E30613 0%, #F6B6B2 39.2%, #FFF0C8 73.88%, #FFFCF1 95.51%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
   }
   button {
     font-size: 2.625rem;

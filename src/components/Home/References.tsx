@@ -9,28 +9,46 @@ import linkedinLogo from './../../assets/img/linkedin-logo.png';
 import upworkLogo from './../../assets/img/upwork-logo.png';
 
 export const References = () => {
+  const referencesList = [
+    {
+      id: 0,
+      name: 'Clutch',
+      imgSrc: clutchLogo
+    },
+    {
+      id: 1,
+      name: 'Dou',
+      imgSrc: douLogo
+    },
+    {
+      id: 2,
+      name: 'Upwork',
+      imgSrc: upworkLogo
+    },
+    {
+      id: 3,
+      name: 'Medium',
+      imgSrc: mediumLogo
+    },{
+      id: 4,
+      name: 'Linked in',
+      imgSrc: linkedinLogo
+    },
+
+  ]
   return (
     <section className="references">
-      <SectionTitle>References</SectionTitle>
+      <SectionTitle size='big'>References</SectionTitle>
       <div className="references-items">
-        <div className="references-items-top">
-          <div className="references-items-item">
-            <img src={clutchLogo} alt="Clutch" />
-          </div>
-          <div className="references-items-item">
-            <img src={douLogo} alt="Dou" />
-          </div>
-          <div className="references-items-item">
-            <img src={upworkLogo} alt="Upwork" />
-          </div>
-        </div>
-        <div className="references-items-bottom">
-          <div className="references-items-item">
-            <img src={mediumLogo} alt="Medium" />
-          </div>
-          <div className="references-items-item">
-            <img src={linkedinLogo} alt="Linked in" /></div> 
-        </div>
+        {
+          referencesList.map((item) => (
+            <div key={item.id} className="references-items-item">
+              <div className="references-items-item-wrapper">
+                <img src={item.imgSrc} alt={item.name} />
+              </div>
+            </div>
+          ))
+        }
       </div>
       <Texture textureStyles={{left: '-1000px', top: '50%', transform: 'translateY(-50%) scale(0.5)'}}/>
     </section>

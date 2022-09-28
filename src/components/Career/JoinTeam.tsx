@@ -4,7 +4,7 @@ import './JoinTeam.scss';
 export const JoinTeam = () => {
   return (
     <section className="join-team">
-      <p>Join our team</p>
+      <h3>Join our team</h3>
       <button>See open roles</button>
     </section>
   )

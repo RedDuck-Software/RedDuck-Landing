@@ -53,7 +53,7 @@ export const Domain = () => {
           domainCards.map((item) => (
             <div key={item.id} className="domain-cards-item">
               <img src={item.imageSrc} alt={item.title} />
-              <p className="domain-cards-item-title">{item.title}</p>
+              <h5 className="domain-cards-item-title">{item.title}</h5>
             </div>
           ))
         }
