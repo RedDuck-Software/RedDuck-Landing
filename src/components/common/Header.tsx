@@ -13,7 +13,7 @@ export const Header = () => {
         <li><Link to="/cases">Cases</Link></li>
         <li><Link to="/career">Career</Link></li>
         <li><Link to="/education">Education</Link></li>
-        <li>Blog</li>
+        <li><Link to="/blog">Blog</Link></li>
         <li><Link to="/contacts">Contact us</Link></li>
         <li><Link to="/about">About us</Link></li>
         <li className='lang-changer'>En</li>
