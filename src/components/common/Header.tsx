@@ -37,17 +37,17 @@ export const Header = () => {
       </div>
       <div className={isMenuOpened ? 'header-menu active' : 'header-menu'}>
         <ul>
-          <li><Link to="/expertise">Expertise</Link></li>
-          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/expertise" onClick={() => {setIsMenuOpened(false)}}>Expertise</Link></li>
+          <li><Link to="/services" onClick={() => {setIsMenuOpened(false)}}>Services</Link></li>
           <hr/>
-          <li><Link to="/cases">Cases</Link></li>
-          <li><Link to="/career">Career</Link></li>
+          <li><Link to="/cases" onClick={() => {setIsMenuOpened(false)}}>Cases</Link></li>
+          <li><Link to="/career" onClick={() => {setIsMenuOpened(false)}}>Career</Link></li>
           <hr/>
-          <li><Link to="/education">Education</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/education" onClick={() => {setIsMenuOpened(false)}}>Education</Link></li>
+          <li><Link to="/blog" onClick={() => {setIsMenuOpened(false)}}>Blog</Link></li>
           <hr/>
-          <li><Link to="/contacts">Contact us</Link></li>
-          <li><Link to="/about">About us</Link></li>
+          <li><Link to="/contacts" onClick={() => {setIsMenuOpened(false)}}>Contact us</Link></li>
+          <li><Link to="/about" onClick={() => {setIsMenuOpened(false)}}>About us</Link></li>
         </ul>
         <div className="header-menu-icons">
           <div className="header-menu-icons-icon">

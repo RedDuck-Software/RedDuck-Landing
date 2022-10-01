@@ -140,3 +140,98 @@
     }
   }
 }
+
+@media (max-width: 1919px) {
+  .references {
+    padding: 0 6rem 16.625rem 6rem;  
+    &-items {
+      margin-top: 3.75rem;
+      column-gap: 14.25rem;
+      &-bottom {
+        display: flex;
+        column-gap: 14.25rem;
+        .references-items-item {
+          border-top-right-radius: 0;
+          border-top-left-radius: 0;
+        }
+      }
+      &-item {
+        width: 14.25rem;
+        height: 8.25rem;
+        img {
+          transform: scale(0.6);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .references {
+    padding: 0 1rem 16.625rem 1rem;
+    &-items {
+      margin-top: 3.75rem;
+      column-gap: 12rem;
+      &-bottom {
+        display: flex;
+        column-gap: 12rem;
+        .references-items-item {
+          border-top-right-radius: 0;
+          border-top-left-radius: 0;
+        }
+      }
+      &-item {
+        width: 12rem;
+        height: 7rem;
+        img {
+          transform: scale(0.5);
+        }
+        &-wrapper {
+          &::before {
+            transform: scale(0.6) translateY(-75%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .references {
+    padding: 0 1rem 16.625rem 1rem;
+    &-items {
+      flex-direction: column;
+      row-gap: 1.25rem;
+      .references-items-item:nth-child(even) {
+        transform: scaleX(-100%) translateY(-1px) !important;
+        .references-items-item-wrapper {
+          transform: scaleX(-100%) !important;
+        }
+      }
+      .references-items-item:last-child {
+        transform: translateY(-1px) !important;
+        .references-items-item-wrapper {
+          transform: scaleX(100%) !important;
+        }
+      }
+      &-item {
+        width: 100%;
+        height: 5rem;
+        border-radius: 29px;
+        border-radius: 29px !important;
+        img {
+          transform: scale(0.5);
+        }
+        &-wrapper {
+          border-radius: 29px !important;
+          &::before {
+            transform: scale(0.6) translateY(-75%);
+          }
+          &::after {
+            border-radius: 29px !important;
+          }
+        }
+      }
+    }
+  }
+}

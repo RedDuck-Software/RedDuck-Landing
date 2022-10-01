@@ -3,8 +3,12 @@ header {
   .header-logo {
     display: none;
   }
+  .header-menu {
+    display: none;
+  }
   .header-menu-icon {
     display: none;
+    user-select: none;
     background: 
       linear-gradient(270deg, rgba(170, 0, 10, 0.55) 4.19%, rgba(188, 0, 11, 0.55) 31.34%, rgba(212, 4, 16, 0.55) 65.96%, rgba(250, 11, 25, 0.55) 97.68%),
       linear-gradient(90.07deg, rgba(170, 0, 10, 0.55)  7.01%, #FF303B 99.93%);

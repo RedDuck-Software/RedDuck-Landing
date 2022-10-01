@@ -29,3 +29,11 @@
     -webkit-text-fill-color: transparent !important;
   }
 }
+@media (max-width: 1024px) {
+  h1, h2 {
+    display: none;
+  }
+  .section-title-main {
+    display: block;
+  }
+}

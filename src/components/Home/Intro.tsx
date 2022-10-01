@@ -22,6 +22,7 @@ export const Intro = () => {
       <div className="intro-scroll">
         <p>scroll</p>
         <ArrowLeft />
+        <ArrowLeft />
         <ScrollVertical />
       </div>
     </section>

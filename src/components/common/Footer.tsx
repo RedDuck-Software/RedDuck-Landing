@@ -27,6 +27,7 @@ export const Footer = () => {
             <p>Contact us</p>
             <p>About us</p>
           </div>
+          <p className='footer-parts-right-address'>© 2023. All rights reserved. <br/>Akademika Pavlova 155 Street, Kharkiv, Ukraine</p>
           <div className="footer-parts-right-socials">
             <div className="footer-parts-right-socials-icon">
               <InstagramIcon />
@@ -44,7 +45,7 @@ export const Footer = () => {
         </div>
       </div>
       <Texture textureStyles={{left: '50%', bottom: '-1700px', transform: 'translateX(-50%) scale(1.1)'}}/>
-      <img src={Logo} alt='Redduck logo' />
+      <img src={Logo} alt='Redduck logo' className='redduck-logo'/>
     </footer>
   )
 }

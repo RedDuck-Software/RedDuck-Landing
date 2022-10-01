@@ -1,6 +1,9 @@
 .intro {
   padding: 4.125rem 9.375rem 18.625rem 9.375rem;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &-left {
     display: flex;
     flex-direction: column;
@@ -32,6 +35,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    svg:first-of-type {
+      display: none;
+    }
     p {
       transform: rotate(-90deg);
       color: #C2B0B4;
@@ -39,6 +45,52 @@
       letter-spacing: 0.15em;
       line-height: 1.625rem;
       margin-bottom: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 1919px) {
+  .intro {
+    &-left {
+      p {
+        font-size: 2.625rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .intro {
+    padding: 4.125rem 1rem 18.625rem 1rem;
+    &-left {
+      svg {
+        display: none;
+      }
+      p {
+        font-size: 2.625rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    &-left {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    &-scroll {
+      bottom: 30%;
+      p {
+        display: none;
+      }
+      svg:first-of-type {
+        display: block;
+      }
+      svg:last-of-type {
+        display: none;
+      }
     }
   }
 }
