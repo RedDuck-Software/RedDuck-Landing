@@ -36,4 +36,10 @@
   .section-title-main {
     display: block;
   }
+  .section-title {
+    &::after {
+      width: 2rem;
+      bottom: -0.5rem;
+    }
+  }
 }
