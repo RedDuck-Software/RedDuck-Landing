@@ -36,6 +36,7 @@ export const Vacancies = () => {
               <div className="vacancies-list-item-right">
                 <div className="vacancies-list-item-right-title">{item.title}</div>
                 <div className="vacancies-list-item-right-description">{item.description}</div>
+                <button className="button-mobile">{item.status ? 'open' : 'closed'}</button>
               </div>
             </div>
           ))
