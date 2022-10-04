@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { SectionTitle } from "../shared/SectionTitle";
 import "./Technologies.scss";
 import { Texture } from "../shared/Texture";
