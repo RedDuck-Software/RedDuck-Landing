@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { SectionTitle } from "../shared/SectionTitle";
 import "./Technologies.scss";
 import { Texture } from "../shared/Texture";
@@ -234,12 +234,9 @@ export const Technologies = () => {
     }
   ]
 
-  const [activeElement, setActiveElement] = useState(Number)
-
   let cardsList = document.querySelectorAll('.technologies-cards-item')
 
   const toggleCard = (id: number) => {
-    setActiveElement(id)
     console.log(cardsList)
     cardsList[id].classList.toggle('active')
   }
