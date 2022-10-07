@@ -1,5 +1,6 @@
 import React from "react";
 import RDLogoColor from './../../assets/img/rd-logo-color.png';
+import RDLogoColorMobile from './../../assets/img/rd-logo-color-mobile.png';
 import AboutUsImg from './../../assets/img/about-us.png';
 import AboutUs1 from './../../assets/img/about-us-1.png';
 import AboutUs2 from './../../assets/img/about-us-2.png';
@@ -64,8 +65,12 @@ export const AboutIntro = () => {
           in the development 
           of financial technologies.
         </p>
-        <img src={AboutUsImg} alt="About us" />
+        <p className="mobile">
+        We make sure that our employees and everyone else can improve their knowledge and soft skills with RedDuck
+        </p>
+        <img src={AboutUsImg} alt="About us" className="about-intro-img"/>
         <img src={RDLogoColor} alt="Red Duck Logo" className="about-intro-logo" />
+        <img src={RDLogoColorMobile} alt="Red Duck Logo" className="about-intro-logo-mobile" />
       </div>
       <div className="about-intro-list">
         {

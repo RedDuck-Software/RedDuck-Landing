@@ -48,7 +48,7 @@ export const ServicesList = () => {
   return (
     <section className="services">
       {
-        (screenWidth >= 1024) ?
+        (screenWidth >= 1023) ?
         <div className="services-list">
           {
             servicesList.map((item) => (

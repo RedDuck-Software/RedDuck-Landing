@@ -63,7 +63,9 @@
 
 @media (max-width: 1919px) {
   .domain {
+    align-items: center;
     &-cards {
+      max-width: 74.25rem;
       &-item {
         position: relative;
         width: 22.5rem;
@@ -105,7 +107,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .domain {
     &-cards {
       row-gap: 3rem;
