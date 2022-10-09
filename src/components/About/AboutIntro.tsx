@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import RDLogoColor from './../../assets/img/rd-logo-color.png';
 import RDLogoColorMobile from './../../assets/img/rd-logo-color-mobile.png';
 import AboutUsImg from './../../assets/img/about-us.png';
@@ -12,7 +12,12 @@ import AboutUs7 from './../../assets/img/about-us-7.png';
 import AboutUs8 from './../../assets/img/about-us-8.png';
 import { ScrollArrow } from "../shared/ScrollArrow";
 import { Texture } from "../shared/Texture";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper';
 import './AboutIntro.scss';
+import "swiper/css";
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export const AboutIntro = () => {
   const aboutList = [
@@ -57,6 +62,18 @@ export const AboutIntro = () => {
       title: 'We constantly improve the conditions of cooperation with us and reach new heights.'
     },
   ]
+
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setScreenWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
   return (
     <section className="about-intro">
       <div className="about-intro-wrapper">
@@ -72,16 +89,39 @@ export const AboutIntro = () => {
         <img src={RDLogoColor} alt="Red Duck Logo" className="about-intro-logo" />
         <img src={RDLogoColorMobile} alt="Red Duck Logo" className="about-intro-logo-mobile" />
       </div>
-      <div className="about-intro-list">
-        {
-          aboutList.map((item) => (
-            <div key={item.id} className="about-intro-list-item">
-              <img src={item.imageSrc} alt="About us" />
-              <p>{item.title}</p>
-            </div>
-          ))
+      {
+          (screenWidth >= 1024) ?
+          <div className="about-intro-list">
+            {
+              aboutList.map((item) => (
+                <div key={item.id} className="about-intro-list-item">
+                  <img src={item.imageSrc} alt="About us" />
+                  <p>{item.title}</p>
+                </div>
+              ))
+            }
+          </div>
+          :
+          <Swiper
+            className="about-intro-list"
+            modules={[Pagination, Navigation]}
+            pagination={{ clickable: true }}
+            width={290}
+            loop={true}
+            loopAdditionalSlides={8}
+            spaceBetween={42}
+            navigation
+          >
+            {
+              aboutList.map((item) => (
+                <SwiperSlide key={item.id} className="about-intro-list-item">
+                  <img src={item.imageSrc} alt="About us" />
+                  <p>{item.title}</p>
+                </SwiperSlide>
+              ))
+            }
+          </Swiper>
         }
-      </div>
       <ScrollArrow />
       <Texture textureStyles={{left: '50%', bottom: '-5rem', transform: 'translateX(-50%) scale(0.8)'}}/>
     </section>
