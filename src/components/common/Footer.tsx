@@ -1,14 +1,19 @@
-import React from 'react';
-import './Footer.scss';
+import React, { useEffect } from 'react';
 import { Texture } from './../shared/Texture';
+import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as LogoHorizontal } from './../../assets/img/logo-horizontal.svg';
 import { ReactComponent as InstagramIcon } from './../../assets/img/icons/inst-icon.svg';
 import { ReactComponent as FacebookIcon } from './../../assets/img/icons/fb-icon.svg';
 import { ReactComponent as LinkedinIcon } from './../../assets/img/icons/linkedin-icon.svg';
 import { ReactComponent as TwitterIcon } from './../../assets/img/icons/twitter-icon.svg';
 import Logo from './../../assets/img/logo-text-bg.png';
+import './Footer.scss';
 
 export const Footer = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location]);
   return (
     <footer className='footer'>
       <div className="footer-parts">
@@ -18,14 +23,14 @@ export const Footer = () => {
         </div>
         <div className="footer-parts-right">
           <div className="footer-parts-right-pages">
-            <p>Expertise</p>
-            <p>Services</p>
-            <p>Partners & cases</p>
-            <p>Career</p>
-            <p>Education</p>
-            <p>Blog</p>
-            <p>Contact us</p>
-            <p>About us</p>
+            <p><Link to="/expertise">Expertise</Link></p>
+            <p><Link to="/services">Services</Link></p>
+            <p><Link to="/cases">Partners & cases</Link></p>
+            <p><Link to="/career">Career</Link></p>
+            <p><Link to="/education">Education</Link></p>
+            <p><Link to="/blog">Blog</Link></p>
+            <p><Link to="/contacts">Contact us</Link></p>
+            <p><Link to="/about">About us</Link></p>
           </div>
           <p className='footer-parts-right-address'>© 2023. All rights reserved. <br/>Akademika Pavlova 155 Street, Kharkiv, Ukraine</p>
           <div className="footer-parts-right-socials">
