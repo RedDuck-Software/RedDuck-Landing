@@ -4,6 +4,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &-player {
+    position: absolute;
+    top: -8.75rem;
+    left: 0;
+    width: 100vw;
+    height: 110vh;
+    background-color: rgba($color: #000000, $alpha: 0.75);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000000;
+    pointer-events: none;
+    transition: .2s ease-in-out;
+  }
+  .active {
+    opacity: 1;
+    pointer-events: all;
+  }
   &-left {
     display: flex;
     flex-direction: column;
@@ -18,7 +38,14 @@
     }
   }
   &-right {
-
+    &-button {
+      width: 23.375rem;
+      object-fit: contain;
+      position: absolute;
+      top: 11rem;
+      right: 20rem;
+      cursor: pointer;
+    }
   }
   &-chart {
     position: absolute;
@@ -59,7 +86,18 @@
   }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1530px) {
+  .intro {
+    &-right {
+      &-button {
+        width: 23.375rem;
+        right: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1279px) {
   .intro {
     padding: 4.125rem 1rem 18.625rem 1rem;
     &-left {
@@ -68,6 +106,14 @@
       }
       p {
         font-size: 2.625rem;
+        max-width: 32.125rem;
+      }
+    }
+    &-right {
+      &-button {
+        width: 23.375rem;
+        top: 3rem;
+        right: 6rem;
       }
     }
   }
@@ -75,13 +121,25 @@
 
 @media (max-width: 1023px) {
   .intro {
+    padding-top: 0; 
+    padding-bottom: 25rem;
     &-left {
       p {
         font-size: 1.5rem;
+        margin-top: 0;
+      }
+    }
+    &-right {
+      margin-bottom: 5rem;
+      &-button {
+        width: 23.375rem;
+        top: 6rem;
+        right: 50%;
+        transform: translateX(55%) scale(0.8);
       }
     }
     &-scroll {
-      bottom: 30%;
+      bottom: 10%;
       p {
         display: none;
       }
