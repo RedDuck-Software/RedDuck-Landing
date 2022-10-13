@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from "react-router-dom";
 import { Texture } from './../shared/Texture';
 import { ReactComponent as LogoHorizontal } from './../../assets/img/logo-horizontal.svg';
 import { ReactComponent as InstagramIcon } from './../../assets/img/icons/inst-icon.svg';
@@ -9,6 +9,7 @@ import { ReactComponent as TwitterIcon } from './../../assets/img/icons/twitter-
 import './Header.scss';
  
 export const Header = () => {
+  const location = useLocation()
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const openMenu = () => {
     setIsMenuOpened(!isMenuOpened);
@@ -16,7 +17,7 @@ export const Header = () => {
     isMenuOpened ? htmlTag!.style.overflowY = 'auto' : htmlTag!.style.overflowY = 'hidden'
   }
   return (
-    <header>
+    <header className={location.pathname !== '/' ? 'header-index' : ''}>
       <Texture className="texture" textureStyles={{left: '-1050px', top: '-1000px', transform: 'scale(0.5)'}}/>
       <LogoHorizontal className='header-logo'/>
       <nav>

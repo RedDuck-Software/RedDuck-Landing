@@ -19,6 +19,7 @@
       border: 1px solid;
       border: 1px solid #344297;
       cursor: pointer;
+      backdrop-filter: blur(100px);
       &:hover {
         .mission-items-item-illustration-top {
           animation: flow 3s ease-in-out infinite;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { SectionTitle } from "../shared/SectionTitle";
 import "./Technologies.scss";
 import { Texture } from "../shared/Texture";
@@ -233,8 +233,10 @@ export const Technologies = () => {
       ]
     }
   ]
-
-  let cardsList = document.querySelectorAll('.technologies-cards-item')
+  let cardsList:any
+  useEffect(() => {
+    cardsList = document.querySelectorAll('.technologies-cards-item')
+  }, [])
 
   const toggleCard = (id: number) => {
     console.log(cardsList)

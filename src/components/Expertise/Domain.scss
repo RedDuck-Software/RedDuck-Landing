@@ -24,6 +24,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       cursor: pointer;
+      backdrop-filter: blur(40px);
       h5 {
         margin-bottom: 1.5rem;
       }
@@ -83,7 +84,7 @@
   }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1279px) {
   .domain {
     &-cards {
       row-gap: 3rem;

@@ -21,14 +21,14 @@ export const ServicesList = () => {
     },
     {
       id: 1,
-      titleHTML: ['EMPLOYEE', <br/> ,'as a service'],
-      title: 'EMPLOYEE as a service',
+      titleHTML: ['Employee', <br/> ,'as a service'],
+      title: 'Employee as a service',
       imageSrc: EmployeeServices
     },
     {
       id: 2,
-      titleHTML: ['C-LEVEL', <br/> ,' as a service'],
-      title: 'C-LEVEL as a service',
+      titleHTML: ['C-level', <br/> ,' as a service'],
+      title: 'C-level as a service',
       imageSrc: CLevelServices
     }
   ]

@@ -9,6 +9,8 @@
     &-left {
       svg {
         width: 30rem;
+        height: 7rem;
+        transform: translateY(-1.5rem);
       }
       p {
         color: #8E99B9;
@@ -87,6 +89,13 @@
           width: 3.625rem;
           height: 3.625rem;
           cursor: pointer;
+          img, svg {
+            width: 2rem;
+          }
+          #medium {
+            filter: invert(1);
+            transform: scale(0.8);
+          }
           &::before {
             content: '';
             background-image: url('./../../assets/img/icons/social-button-inactive.svg');

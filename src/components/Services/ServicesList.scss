@@ -16,7 +16,7 @@
       justify-content: flex-end;
       position: relative;
       border-radius: 30px;
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(30px);
       &:nth-child(2) {
         img {
           top: -10rem;
@@ -72,6 +72,7 @@
 @media (max-width: 1919px) {
   .services {
     .services-list {
+      margin-top: 1rem;
       &-item {
         width: 22.5rem;
         height: 19rem;
@@ -83,6 +84,20 @@
         }
         &-title {
           font-size: 2rem;
+          position: relative;
+          &::after {
+            content: '';
+            background-image: url('./../../assets/img/icons/red-arrow-icon.svg');
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: -43px;
+            transform: translateY(-50%);
+            z-index: 4;
+            width: 1.6rem;
+            height: 1.3rem;
+            transition: .2s ease-in-out;
+          }
         }
       }
     }

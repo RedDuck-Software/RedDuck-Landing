@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import { Texture } from './../shared/Texture';
 import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as LogoHorizontal } from './../../assets/img/logo-horizontal.svg';
-import { ReactComponent as InstagramIcon } from './../../assets/img/icons/inst-icon.svg';
 import { ReactComponent as FacebookIcon } from './../../assets/img/icons/fb-icon.svg';
 import { ReactComponent as LinkedinIcon } from './../../assets/img/icons/linkedin-icon.svg';
 import { ReactComponent as TwitterIcon } from './../../assets/img/icons/twitter-icon.svg';
+import DouLogo from './../../assets/img/dou-logo.png';
+import MediumLogo from './../../assets/img/medium__logo.png';
 import Logo from './../../assets/img/logo-text-bg.png';
 import './Footer.scss';
 
@@ -34,18 +35,18 @@ export const Footer = () => {
           </div>
           <p className='footer-parts-right-address'>© 2023. All rights reserved. <br/>Akademika Pavlova 155 Street, Kharkiv, Ukraine</p>
           <div className="footer-parts-right-socials">
-            <div className="footer-parts-right-socials-icon">
-              <InstagramIcon />
-            </div>
-            <div className="footer-parts-right-socials-icon">
+            <a href='https://jobs.dou.ua/companies/red-duck/' className="footer-parts-right-socials-icon">
+              <img src={DouLogo} alt="Dou" />
+            </a>
+            <a href='https://www.facebook.com/profile.php?id=100076952286530' className="footer-parts-right-socials-icon">
               <FacebookIcon />
-            </div>
-            <div className="footer-parts-right-socials-icon">
-              <TwitterIcon />
-            </div>
-            <div className="footer-parts-right-socials-icon">
+            </a>
+            <a href='https://redduck.medium.com/' className="footer-parts-right-socials-icon">
+              <img src={MediumLogo} alt="Dou" id='medium'/>
+            </a>
+            <a href='https://www.linkedin.com/company/redduckdev/' className="footer-parts-right-socials-icon">
               <LinkedinIcon />
-            </div>
+            </a>
           </div>
         </div>
       </div>
