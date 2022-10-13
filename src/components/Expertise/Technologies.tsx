@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { SectionTitle } from "../shared/SectionTitle";
 import "./Technologies.scss";
 import { Texture } from "../shared/Texture";
@@ -233,14 +233,14 @@ export const Technologies = () => {
       ]
     }
   ]
-  let cardsList:any
+  const [cardsList, setCardsList] = useState<NodeListOf<HTMLElement>>()
   useEffect(() => {
-    cardsList = document.querySelectorAll('.technologies-cards-item')
+    setCardsList(document.querySelectorAll('.technologies-cards-item'))
   }, [])
 
   const toggleCard = (id: number) => {
     console.log(cardsList)
-    cardsList[id].classList.toggle('active')
+    cardsList![id].classList.toggle('active')
   }
 
   return (
