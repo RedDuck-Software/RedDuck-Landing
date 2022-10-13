@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as LogoHorizontal } from './../../assets/img/logo-horizontal.svg';
 import { ReactComponent as FacebookIcon } from './../../assets/img/icons/fb-icon.svg';
 import { ReactComponent as LinkedinIcon } from './../../assets/img/icons/linkedin-icon.svg';
-import { ReactComponent as TwitterIcon } from './../../assets/img/icons/twitter-icon.svg';
 import DouLogo from './../../assets/img/dou-logo.png';
 import MediumLogo from './../../assets/img/medium__logo.png';
 import Logo from './../../assets/img/logo-text-bg.png';

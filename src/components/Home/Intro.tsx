@@ -10,7 +10,6 @@ import PlayButton from './../../assets/img/play-button.png';
 
 export const Intro = () => {
   const [isVideoOpened, setIsVideoOpened] = useState(false)
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
 
   return (
     <section className='intro'>
