@@ -6,6 +6,13 @@ import Achievements3 from './../../assets/img/achievements-3.png';
 import Achievements4 from './../../assets/img/achievements-4.png';
 import Achievements5 from './../../assets/img/achievements-5.png';
 import Achievements6 from './../../assets/img/achievements-6.png';
+import Achievements7 from './../../assets/img/launchpads.png';
+import Achievements8 from './../../assets/img/defi.png';
+import Achievements9 from './../../assets/img/nftGames.png';
+import Achievements10 from './../../assets/img/blockchainIndexers.png';
+import Achievements11 from './../../assets/img/blockchainTechnology.png';
+import Achievements12 from './../../assets/img/bridge.png';
+import Achievements13 from './../../assets/img/bridges.png';
 import RoadmapArrow from './../../assets/img/roadmap-arrow.png';
 import { ReactComponent as GradientArrow } from './../../assets/img/icons/gradient-arrow-bottom.svg';
 import { ScrollArrow } from "../shared/ScrollArrow";
@@ -53,55 +60,55 @@ export const Achievements = () => {
       id: 6,
       date: '03. 2021',
       title: 'Development of our own blockchain indexer',
-      imageSrc: Achievements6
+      imageSrc: Achievements10
     },
     {
       id: 7,
       date: '06. 2021',
-      title: 'Our first development of PlayToEarn game: crimecash.biz',
-      imageSrc: Achievements6
+      title: ['Our first development of PlayToEarn game: ', <a href="https://www.crimecash.biz/">crimecash.biz</a>],
+      imageSrc: Achievements9
     },
     {
       id: 8,
       date: '08. 2021:',
       title: ['Our first development af a DevTool for blockchain developers:', <a href="https://github.com/RedDuck-Software/SolidityProvider">https://github.com/RedDuck-Software/SolidityProvider</a>],
-      imageSrc: Achievements6
+      imageSrc: Achievements3
     },
     {
       id: 9,
       date: '10. 2021',
       title: 'Development contract with a Top-10 DeFi product',
-      imageSrc: Achievements6
+      imageSrc: Achievements8
     },
     {
       id: 10,
       date: '11. 2021',
       title: 'Participation in BlockchainUA conference',
-      imageSrc: Achievements6
+      imageSrc: Achievements11
     },
     {
       id: 11,
       date: '02. 2022',
-      title: 'Started our volunteering initiative in Ukraine - buggydao.redduck.io',
-      imageSrc: Achievements6
+      title: ['Started our volunteering initiative in Ukraine - ', <a href="https://buggydao.redduck.io/">buggydao.redduck.io</a>],
+      imageSrc: Achievements12
     },
     {
       id: 12,
       date: '05. 2022',
       title: 'Produced and sent our first buggy for the ukrainian army',
-      imageSrc: Achievements6
+      imageSrc: Achievements13
     },
     {
       id: 13,
       date: '07. 2022',
-      title: 'Started development of our own launchpad - launchpad.redduck.io',
-      imageSrc: Achievements6
+      title: ['Started development of our own launchpad - ', <a href="https://launchpad.redduck.io/">launchpad.redduck.io</a>],
+      imageSrc: Achievements7
     },
     {
       id: 14,
       date: '09. 2022',
-      title: ['Second place at ', <a href="kyivtechsummit.com">kyivtechsummit.com</a>],
-      imageSrc: Achievements6
+      title: ['Second place at ', <a href="https://www.kyivtechsummit.com">kyivtechsummit.com</a>],
+      imageSrc: Achievements1
     },
 
   ]
