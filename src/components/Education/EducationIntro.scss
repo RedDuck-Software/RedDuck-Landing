@@ -24,3 +24,41 @@
     }
   }
 }
+
+@media (max-width: 1919px) {
+  .education {
+    &-intro {
+      column-gap: 4rem;
+      &-title {
+        font-size: 2.625rem;
+        max-width: 35.5rem;
+      }
+      img {
+        width: 25rem;
+        height: 26.875rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .education {
+    margin: 0 1rem;
+    &-intro {
+      margin-top: -4rem;
+      column-gap: 4rem;
+      flex-direction: column;
+      &-title {
+        font-size: 1.5rem;
+        max-width: none;
+      }
+      img {
+        width: 15.625rem;
+        height: 16.875rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+}

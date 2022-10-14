@@ -53,3 +53,85 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 1919px) {
+  .logo-with-hands {
+    transform: scale(0.8);
+    &-hands {
+      &-red {
+        left: -1392px;
+        top: -170px;
+      }
+      &-blue {
+        left: -92px;
+        top: -170px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .logo-with-hands {
+    transform: scale(0.6);
+    &-hands {
+      &-red {
+        left: -1632px;
+        top: -170px;
+      }
+      &-blue {
+        left: -92px;
+        top: -170px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .logo-with-hands {
+    flex-direction: column;
+    transform: scale(0.8);
+    &-logo {
+      height: auto;
+    }
+    &-hands {
+      &-red {
+        position: absolute;
+        width: 180rem;
+        height: 53.75rem;
+        object-fit: contain;
+        left: -1398px;
+        top: -320px;
+        transform: scale(0.4);
+      }
+      &-blue {
+        position: absolute;
+        width: 180rem;
+        height: 53.75rem;
+        object-fit: contain;
+        left: -1100px;
+        top: -90px;
+        transform: scale(0.4);
+      }
+    }
+    &-gear {
+      position: absolute;
+      img {
+        width: 2rem;
+        height: 2rem;
+        animation: rotation 40s linear infinite;
+      }
+      img:first-child {
+        position: absolute;
+        top: -117px;
+        left: 185px;
+        width: 4rem;
+        height: 4rem;
+      }
+      img:last-child {
+        position: absolute;
+        top: 40px;
+        left: 147px;
+      }
+    }
+  }
+}

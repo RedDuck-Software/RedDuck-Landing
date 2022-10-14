@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { SectionTitle } from "../shared/SectionTitle";
 import SchoolImg from './../../assets/img/school.png';
 import CourseImg from './../../assets/img/course.png';
@@ -43,9 +43,21 @@ export const Programs = () => {
     }
   ]
 
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setScreenWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+
   return (
     <section className="programs">
-      <SectionTitle>Domain</SectionTitle>
+      <SectionTitle>{screenWidth >= 1024 ? 'Join our programs' : 'Programs'}</SectionTitle>
       <div className="programs-list">
         {
           programsList.map((item) => (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { SectionTitle } from "../shared/SectionTitle";
 import "./Technologies.scss";
 import { Texture } from "../shared/Texture";
@@ -233,7 +233,15 @@ export const Technologies = () => {
       ]
     }
   ]
+  const [cardsList, setCardsList] = useState<NodeListOf<HTMLElement>>()
+  useEffect(() => {
+    setCardsList(document.querySelectorAll('.technologies-cards-item'))
+  }, [])
 
+  const toggleCard = (id: number) => {
+    console.log(cardsList)
+    cardsList![id].classList.toggle('active')
+  }
 
   return (
     <section className="technologies">
@@ -246,6 +254,17 @@ export const Technologies = () => {
               <hr key={item.id / 1000000}/>
               <div key={item.id} className="technologies-cards-item" id="header">
                 <div className="technologies-cards-item-wrapper">
+                  <div
+                    onClick={() => {toggleCard(index)}}
+                    className="technologies-cards-item-open-button"
+                  >
+                    <div className="rectangle"></div>
+                    <div className="rectangle"></div>
+                  </div>
+                  <div
+                    onClick={() => {toggleCard(index)}}
+                    className="technologies-cards-item-close-button"
+                  ></div>
                   <div className="technologies-cards-item-number">{item.id}</div>
                   <div className="technologies-cards-item-title">
                     <img src={item.imageSrc} alt={item.title} />
@@ -268,6 +287,17 @@ export const Technologies = () => {
             :
             <div key={item.id} className="technologies-cards-item" id="header">
               <div className="technologies-cards-item-wrapper">
+                <div
+                  onClick={() => {toggleCard(index)}}
+                  className="technologies-cards-item-open-button"
+                >
+                  <div className="rectangle"></div>
+                  <div className="rectangle"></div>
+                </div>
+                <div
+                  onClick={() => {toggleCard(index)}}
+                  className="technologies-cards-item-close-button"
+                ></div>
                 <div className="technologies-cards-item-number">{item.id}</div>
                 <div className="technologies-cards-item-title">
                   <img src={item.imageSrc} alt={item.title} />
@@ -288,7 +318,7 @@ export const Technologies = () => {
           )))
         }
       </div>
-      <Texture textureStyles={{left: '50%', top: '20%', transform: 'translateX(-50%) scale(0.8)'}}/>
+      <Texture className="texture" textureStyles={{left: '50%', top: '20%', transform: 'translateX(-50%) scale(0.8)'}}/>
     </section>
   )
 }

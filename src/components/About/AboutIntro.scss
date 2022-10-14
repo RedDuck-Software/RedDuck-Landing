@@ -20,6 +20,9 @@
       width: 53.25rem;
       margin-top: 8rem;
     }
+    .mobile {
+      display: none;
+    }
   }
   &-logo {
     position: absolute;
@@ -28,6 +31,15 @@
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
     user-select: none;
+  }
+  &-logo-mobile {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    user-select: none;
+    display: none;
   }
   &-list {
     display: flex;
@@ -46,6 +58,163 @@
       p {
         margin: 0;
         margin-left: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1919px) {
+  .about-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    &-img {
+      width: 22.125rem;
+      height: 23.625rem;
+    }
+    &-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 6.875rem;
+      padding: 0 1rem;
+      p {
+        margin: 0;
+        background: linear-gradient(90deg, #E30613 0%, #F6B6B2 39.2%, #FFF0C8 73.88%, #FFFCF1 95.51%), linear-gradient(99.17deg, #FFFFFF -1.71%, #DBE6FF 33.69%, #BCD0FF 50.25%, #E9EFFF 72.74%, #FFFFFF 92.77%), #FFFFFF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.375rem;
+        font-weight: 700;
+        width: 53.25rem;
+        margin-top: 8rem;
+        max-width: 31.875rem;
+      }
+    }
+    &-logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
+      user-select: none;
+      width: 61.125rem;
+      height: 15.75rem;
+      object-fit: cover;
+    }
+    &-list {
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 1rem;
+      flex-wrap: wrap;
+      row-gap: 3.125rem;
+      column-gap: 2rem;
+      margin-top: 7.875rem;
+      &-item {
+        display: flex;
+        align-items: center;
+        width: 49.75rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.875rem;
+        p {
+          margin: 0;
+          margin-left: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    &-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      column-gap: 6.875rem;
+      padding: 0 1rem;
+      width: 100%;  
+      p {
+        margin: 0;
+        background: linear-gradient(90deg, #E30613 0%, #F6B6B2 39.2%, #FFF0C8 73.88%, #FFFCF1 95.51%), linear-gradient(99.17deg, #FFFFFF -1.71%, #DBE6FF 33.69%, #BCD0FF 50.25%, #E9EFFF 72.74%, #FFFFFF 92.77%), #FFFFFF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.5rem;
+        font-weight: 700;
+        width: auto;
+        margin-top: 0rem;
+        max-width: 19rem;
+        display: none;
+      }
+      .mobile {
+        display: block;
+        margin-left: 1rem;
+      }
+    }
+    &-img {
+      width: 15.875rem;
+      height: 16.875rem;
+      align-self: center;
+    }
+    &-logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
+      user-select: none;
+      width: 61.125rem;
+      height: 15.75rem;
+      object-fit: cover;
+      display: none;
+    }
+    &-logo-mobile {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
+      user-select: none;
+      width: 21.5rem;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+    &-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 0;
+      column-gap: 2rem;
+      margin-top: 7.875rem;
+      width: 18rem !important;
+      height: auto;
+      padding: 0;
+      margin-bottom: 2rem;  
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 18rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        p {
+          margin: 0;
+          margin-left: 0;
+          margin-top: 1.25rem;  
+        }
       }
     }
   }

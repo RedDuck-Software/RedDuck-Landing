@@ -14,7 +14,7 @@ import { ScrollArrow } from '../shared/ScrollArrow';
 export const Mission = () => {
   return (
     <section className="mission">
-      <SectionTitle>Mission</SectionTitle>
+      <SectionTitle size='big'>Mission</SectionTitle>
       <div className="mission-items">
         <div className="mission-items-item">
           <div className="mission-items-item-illustration">

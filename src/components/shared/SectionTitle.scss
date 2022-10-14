@@ -13,12 +13,11 @@
     height: 0.375rem;
     border-radius: 90px;
   }
-  h1 {
+  h1, h2 {
     opacity: 0.1;
     background: linear-gradient(134.14deg, #B890EB -33.82%, #9A8EF1 -11.48%, rgba(90, 138, 255, 0) 121.85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 8.125rem;
     font-weight: 600;
     margin: 0;
     white-space: nowrap;
@@ -28,5 +27,19 @@
     background: linear-gradient(90deg, #E30613 0%, #F6B6B2 39.2%, #FFF0C8 73.88%, #FFFCF1 95.51%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
+  }
+}
+@media (max-width: 1023px) {
+  h1, h2 {
+    display: none;
+  }
+  .section-title-main {
+    display: block;
+  }
+  .section-title {
+    &::after {
+      width: 2rem;
+      bottom: -0.5rem;
+    }
   }
 }

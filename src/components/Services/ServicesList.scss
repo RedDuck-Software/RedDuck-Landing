@@ -16,7 +16,7 @@
       justify-content: flex-end;
       position: relative;
       border-radius: 30px;
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(30px);
       &:nth-child(2) {
         img {
           top: -10rem;
@@ -66,5 +66,97 @@
         -webkit-text-fill-color: transparent;
       }
     }
+  }
+}
+
+@media (max-width: 1919px) {
+  .services {
+    .services-list {
+      margin-top: 1rem;
+      &-item {
+        width: 22.5rem;
+        height: 19rem;
+        img {
+          transform: translateX(-50%) scale(0.6);
+        }
+        &-id {
+          font-size: 10rem;
+        }
+        &-title {
+          font-size: 2rem;
+          position: relative;
+          &::after {
+            content: '';
+            background-image: url('./../../assets/img/icons/red-arrow-icon.svg');
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: -43px;
+            transform: translateY(-50%);
+            z-index: 4;
+            width: 1.6rem;
+            height: 1.3rem;
+            transition: .2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .services {
+    .services-list {
+      column-gap: 1.875rem;
+      &-item {
+        width: 18.75rem;
+        height: 19rem;
+        img {
+          transform: translateX(-50%) scale(0.6);
+        }
+        &-id {
+          font-size: 10rem;
+        }
+        &-title {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .services {
+    .services-list {
+      width: 18.125rem !important;
+      height: 17.125rem !important;
+      margin-bottom: 2rem;
+      &-item {
+        width: 18.125rem !important;
+        height: 17.125rem !important;
+        img {
+          transform: translateX(-50%) scale(0.6);
+        }
+        &-id {
+          font-size: 10rem;
+        }
+        &-title {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .swiper-slide {
+    overflow: visible;
+  }
+  .swiper {
+    overflow: visible;
+  }
+  .swiper-button-next, .swiper-button-prev, .swiper-pagination {
+    bottom: -4rem !important;
   }
 }

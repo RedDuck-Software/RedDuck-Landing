@@ -65,7 +65,43 @@ export const OurTeam = () => {
       <div className="our-team-list">
         {
           ourTeamList.map((item) => (
-            <div key={item.id} className="our-team-list-item">
+            <div key={item.id} className="our-team-list-item desktop">
+              <div className="our-team-list-item-wrapper">
+                <img src={item.src} alt="Person" />
+                <div className="our-team-list-item-wrapper-name">{item.name}</div>
+                <div className="our-team-list-item-wrapper-position">{item.position}</div>
+              </div>
+              <ul>
+                {
+                  item.description.map((el) => (
+                    <li key={el.id}>{el.text}</li>
+                  ))
+                }
+              </ul>
+            </div>
+          ))
+        }
+        {
+          ourTeamList.map((item) => (
+            <div key={item.id} className="our-team-list-item tablet">
+              <img className="our-team-list-item-left" src={item.src} alt="Person" />
+              <div className="our-team-list-item-right">
+                <div className="our-team-list-item-right-name">{item.name}</div>
+                <div className="our-team-list-item-right-position">{item.position}</div> 
+                <ul>
+                  {
+                    item.description.map((el) => (
+                      <li key={el.id}>{el.text}</li>
+                    ))
+                  }
+                </ul>
+              </div>
+            </div>
+          ))
+        }
+        {
+          ourTeamList.map((item) => (
+            <div key={item.id} className="our-team-list-item mobile">
               <div className="our-team-list-item-wrapper">
                 <img src={item.src} alt="Person" />
                 <div className="our-team-list-item-wrapper-name">{item.name}</div>

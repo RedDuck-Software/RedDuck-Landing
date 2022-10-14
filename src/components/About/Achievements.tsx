@@ -53,7 +53,27 @@ export const Achievements = () => {
   return (
     <section className="achievements">
       <SectionTitle>Achievements</SectionTitle>
-      <div className="achievements-list">
+      <div className="achievements-list desktop">
+        {
+          achievementsList.map((item) => (
+            <div key={item.id} className="achievements-list-item">
+              <div className="achievements-list-item-left">
+                <div className="achievements-list-item-left-id">{item.id + 1}</div>
+                <div className="achievements-list-item-left-date">{item.date}</div>
+              </div>
+              <div className="arrows">
+                <img src={RoadmapArrow} alt="Arrow" className="achievements-list-item-roadmap" />
+                <GradientArrow className="achievements-list-item-arrow" />
+              </div>
+              <div className="achievements-list-item-right">
+                <img src={item.imageSrc} alt="Achievement" />
+                <p>{item.title}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+      <div className="achievements-list mobile">
         {
           achievementsList.map((item) => (
             <div key={item.id} className="achievements-list-item">

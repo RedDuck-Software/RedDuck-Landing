@@ -17,9 +17,9 @@ export const InsidePageTitle = (props: any) => {
         <span>/</span>
         <span>{location.pathname.replace('/', '')}</span>
       </div>
-      <div className="inside-page-title-bottom">
+      <h1 className="inside-page-title-bottom">
         {props.title}
-      </div>
+      </h1>
     </>
   )
 }
