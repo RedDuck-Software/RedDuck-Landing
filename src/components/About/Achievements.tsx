@@ -49,6 +49,61 @@ export const Achievements = () => {
       title: 'Raising investments, company re-branding, and expanding the team',
       imageSrc: Achievements6
     },
+    {
+      id: 6,
+      date: '03. 2021',
+      title: 'Development of our own blockchain indexer',
+      imageSrc: Achievements6
+    },
+    {
+      id: 7,
+      date: '06. 2021',
+      title: 'Our first development of PlayToEarn game: crimecash.biz',
+      imageSrc: Achievements6
+    },
+    {
+      id: 8,
+      date: '08. 2021:',
+      title: ['Our first development af a DevTool for blockchain developers:', <a href="https://github.com/RedDuck-Software/SolidityProvider">https://github.com/RedDuck-Software/SolidityProvider</a>],
+      imageSrc: Achievements6
+    },
+    {
+      id: 9,
+      date: '10. 2021',
+      title: 'Development contract with a Top-10 DeFi product',
+      imageSrc: Achievements6
+    },
+    {
+      id: 10,
+      date: '11. 2021',
+      title: 'Participation in BlockchainUA conference',
+      imageSrc: Achievements6
+    },
+    {
+      id: 11,
+      date: '02. 2022',
+      title: 'Started our volunteering initiative in Ukraine - buggydao.redduck.io',
+      imageSrc: Achievements6
+    },
+    {
+      id: 12,
+      date: '05. 2022',
+      title: 'Produced and sent our first buggy for the ukrainian army',
+      imageSrc: Achievements6
+    },
+    {
+      id: 13,
+      date: '07. 2022',
+      title: 'Started development of our own launchpad - launchpad.redduck.io',
+      imageSrc: Achievements6
+    },
+    {
+      id: 14,
+      date: '09. 2022',
+      title: ['Second place at ', <a href="kyivtechsummit.com">kyivtechsummit.com</a>],
+      imageSrc: Achievements6
+    },
+
   ]
   return (
     <section className="achievements">
