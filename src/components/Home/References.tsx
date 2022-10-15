@@ -13,26 +13,31 @@ export const References = () => {
     {
       id: 0,
       name: 'Clutch',
-      imgSrc: clutchLogo
+      imgSrc: clutchLogo,
+      link: 'https://clutch.co/profile/redduck'
     },
     {
       id: 1,
       name: 'Dou',
-      imgSrc: douLogo
+      imgSrc: douLogo,
+      link: 'https://jobs.dou.ua/companies/red-duck/'
     },
     {
       id: 2,
       name: 'Upwork',
-      imgSrc: upworkLogo
+      imgSrc: upworkLogo,
+      link: 'https://www.upwork.com/ag/redduck/'
     },
     {
       id: 3,
       name: 'Medium',
-      imgSrc: mediumLogo
+      imgSrc: mediumLogo,
+      link: 'https://medium.com/@redduck'
     },{
       id: 4,
       name: 'Linked in',
-      imgSrc: linkedinLogo
+      imgSrc: linkedinLogo,
+      link: 'https://www.linkedin.com/company/redduckdev/'
     },
 
   ]
@@ -42,11 +47,11 @@ export const References = () => {
       <div className="references-items">
         {
           referencesList.map((item) => (
-            <div key={item.id} className="references-items-item">
+            <a href={item.link} key={item.id} className="references-items-item">
               <div className="references-items-item-wrapper">
                 <img src={item.imgSrc} alt={item.name} />
               </div>
-            </div>
+            </a>
           ))
         }
       </div>

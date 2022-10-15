@@ -19,7 +19,7 @@ export const Footer = () => {
       <div className="footer-parts">
         <div className="footer-parts-left">
           <LogoHorizontal />
-          <p>© 2023. All rights reserved. <br/>Akademika Pavlova 155 Street, Kharkiv, Ukraine</p>
+          <p>© {new Date().getFullYear()}. All rights reserved. <br/>Akademika Pavlova 155 Street, Kharkiv, Ukraine</p>
         </div>
         <div className="footer-parts-right">
           <div className="footer-parts-right-pages">

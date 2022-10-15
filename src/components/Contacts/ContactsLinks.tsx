@@ -24,49 +24,49 @@ export const ContactsLinks = () => {
       id: 0,
       imageSrc: ClutchLogoGradient,
       imageSrcHover: ClutchLogo,
-      link: '#'
+      link: 'https://clutch.co/profile/redduck'
     },
     {
       id: 1,
       imageSrc: DouLogoGradient,
       imageSrcHover: DouLogo,
-      link: '#'
+      link: 'https://jobs.dou.ua/companies/red-duck/'
     },
     {
       id: 2,
       imageSrc: MediumLogoGradient,
       imageSrcHover: MediumLogo,
-      link: '#'
+      link: 'https://medium.com/@redduck'
     },
     {
       id: 3,
       imageSrc: LinkedinLogoGradient,
       imageSrcHover: LinkedinLogo,
-      link: '#'
+      link: 'https://www.linkedin.com/company/redduckdev/'
     },
     {
       id: 4,
       imageSrc: UpworkLogoGradient,
       imageSrcHover: UpworkLogo,
-      link: '#'
+      link: 'https://www.upwork.com/ag/redduck/'
     },
     {
       id: 5,
       imageSrc: FacebookLogoGradient,
       imageSrcHover: FacebookLogo,
-      link: '#'
+      link: 'https://www.facebook.com/profile.php?id=100076952286530'
     },
     {
       id: 6,
       imageSrc: TwitterLogoGradient,
       imageSrcHover: TwitterLogo,
-      link: '#'
+      link: 'https://twitter.com/redduckdev?s=21&t=_Z9gGbcRoQ7YB7lR0pwKHA'
     },
     {
       id: 7,
       imageSrc: EmailLogoGradient,
       imageSrcHover: EmailLogo,
-      link: '#'
+      link: 'mailto:contact@redduck.io'
     },
   ]
 

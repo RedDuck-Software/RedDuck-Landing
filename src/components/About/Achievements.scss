@@ -81,6 +81,12 @@
         display: flex;
         align-items: center;
         width: 79.25rem;
+        a {
+          border-bottom: 10px dotted;
+          border-image-slice: 1;
+          border-width: 1px;
+          border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+        }
         &::before {
           content: '';
           position: absolute;

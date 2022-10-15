@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <header className={location.pathname !== '/' ? 'header-index' : ''}>
       <Texture className="texture" textureStyles={{left: '-1050px', top: '-1000px', transform: 'scale(0.5)'}}/>
-      <LogoHorizontal className='header-logo'/>
+      <Link to="/"><LogoHorizontal className='header-logo'/></Link>
       <nav>
         <li><Link to="/expertise">Expertise</Link></li>
         <li><Link to="/services">Services</Link></li>

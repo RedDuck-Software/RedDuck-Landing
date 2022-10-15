@@ -1,0 +1,97 @@
+.articles-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 1.875rem;
+  row-gap: 1.875rem;
+  margin-top: 4.125rem; 
+  margin-bottom: 15.125rem;
+  &-item {
+    position: relative;
+    width: 32.5rem;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(270deg, #83007A -26.62%, #720A88 30.3%, #6067D6 78.76%, #007DBA 121.06%);
+    padding: 1px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 100%;
+      height: 19.625rem;
+      z-index: 1;
+      background: linear-gradient(110.49deg, rgba(3, 13, 241, 0.68) 15.25%, rgba(19, 12, 158, 0.68) 42.22%, rgba(32, 13, 161, 0.68) 59.02%, rgba(133, 24, 219, 0.68) 89.5%);
+    }
+    &-wrapper {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      background: linear-gradient(180deg, #0A0B24 0%, #1E0928 42.86%, #0E0B25 63.27%, #0C0B24 84.04%, #090B35 100%);
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      height: 19.625rem;
+      object-fit: cover;
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    &-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      background: linear-gradient(270deg, #FA8FFF 13.69%, #B3F1FF 87.48%), linear-gradient(90deg, #E30613 0%, #F6B6B2 39.2%, #FFF0C8 73.88%, #FFFCF1 95.51%), #FFFFFF;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 1.875rem 1.875rem 1rem 1.875rem;
+    }
+    &-description {
+      max-height: 9.25rem;
+      overflow: hidden;
+      margin: 0 1.875rem 3.625rem 1.875rem;
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.920432) 17.86%, rgba(255, 255, 255, 0.215805) 53.39%, rgba(255, 255, 255, 0) 85.37%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.75rem;
+      font-weight: 500;
+      figure, img, svg {
+        display: none;
+      }
+    }
+    hr {
+      width: 28.75rem;
+      height: 1px;
+      background: linear-gradient(269.98deg, rgba(82, 89, 255, 0) -10.91%, rgba(82, 89, 255, 0) -1.57%, rgba(82, 89, 254, 0.115411) 4.92%, #5156F7 38.54%, rgba(247, 189, 181, 0.63) 54.34%, #9A2E00 86.55%, rgba(154, 46, 0, 0) 101.22%);
+      margin-top: 1.75rem;
+      margin-bottom: 1rem;
+      border: none;
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &-date {
+      margin: 0 1.875rem 1.25rem 1.875rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(270deg, #FA8FFF 13.69%, #B3F1FF 87.48%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      &::before {
+        content: '';
+        position: relative;
+        display: block;
+        background-image: url('./../../assets/img/icons/calendar-icon.svg');
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-right: 0.625rem; 
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
