@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import { Texture } from './../shared/Texture';
 import { ReactComponent as LogoHorizontal } from './../../assets/img/logo-horizontal.svg';
@@ -13,13 +13,15 @@ export const Header = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const openMenu = () => {
     setIsMenuOpened(!isMenuOpened);
-    let htmlTag = document.querySelector('html');
-    isMenuOpened ? htmlTag!.style.overflowY = 'auto' : htmlTag!.style.overflowY = 'hidden'
   }
+  useEffect(() => {
+    let htmlTag = document.querySelector('html');
+    !isMenuOpened ? htmlTag!.style.overflowY = 'auto' : htmlTag!.style.overflowY = 'hidden'
+  }, [location, isMenuOpened])
   return (
     <header className={location.pathname !== '/' ? 'header-index' : ''}>
       <Texture className="texture" textureStyles={{left: '-1050px', top: '-1000px', transform: 'scale(0.5)'}}/>
-      <LogoHorizontal className='header-logo'/>
+      <Link to="/"><LogoHorizontal className='header-logo'/></Link>
       <nav>
         <li><Link to="/expertise">Expertise</Link></li>
         <li><Link to="/services">Services</Link></li>

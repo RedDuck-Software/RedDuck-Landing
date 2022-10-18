@@ -808,6 +808,34 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .cases-list {
+    margin-left: 14%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .cases-list {
+    margin-left: 7.5%;
+    &:first-of-type {
+      position: relative;
+      &::after {
+        content: 'Cases';
+        position: absolute;
+        bottom: -19rem;
+        left: -2rem;
+        font-size: 23.7rem;
+        font-weight: 600;
+        background: linear-gradient(179.59deg, #B890EB -111.94%, #9A8EF1 -78.51%, rgba(90, 138, 255, 0) 121.04%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: -1;
+        opacity: 0.15;
+      }
+    }
+  }
+}
+
 @media (max-width: 1134px) {
   .cases {
     display: flex;
@@ -829,6 +857,22 @@
       column-gap: 0;
       width: 22.5rem;
       margin: -2rem auto 0 auto;
+      &:first-of-type {
+        position: relative;
+        &::after {
+          content: 'Cases';
+          position: absolute;
+          bottom: -8rem;
+          left: 1rem;
+          font-size: 6.625rem;
+          font-weight: 600;
+          background: linear-gradient(179.59deg, #B890EB -111.94%, #9A8EF1 -78.51%, rgba(90, 138, 255, 0) 121.04%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          z-index: -1;
+          opacity: 0.15;
+        }
+      }
       hr  {
         display: none;
       }

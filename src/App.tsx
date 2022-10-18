@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Header } from './components/common/Header';
 import { Footer } from './components/common/Footer';
 import { Home } from './pages/Home';
@@ -15,6 +15,7 @@ import { PageLoader } from './components/shared/PageLoader';
 
 function App() {
   const [loadStatus, setLoadStatus] = useState(false)
+  const location = useLocation();
   useEffect (() => {
     window.addEventListener('load', () => {
       setTimeout(() => {
@@ -22,13 +23,26 @@ function App() {
       }, 2000);
     });
   })
+  useEffect(() => {
+    if (!loadStatus) {
+      document.body.className = 'loading'
+    } else {
+      document.body.className = ''
+    }
+  }, [loadStatus])
+  useEffect(() => {
+    let title = location.pathname
+    if (title !== '/') {
+      document.title = `RedDuck - ${(title.replace('/', ''))[0].toUpperCase() + title.slice(2)}`;
+    }
+  });
   return (
     ( loadStatus ? 
       <div className="App">
         <Header />
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="expertise" element={<Expertise/>} />
+          <Route path="expertise" element={<Expertise/>}/>
           <Route path="services" element={<Services/>} />
           <Route path="cases" element={<Cases/>} />
           <Route path="career" element={<Career/>} />

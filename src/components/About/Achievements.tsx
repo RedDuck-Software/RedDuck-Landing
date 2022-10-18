@@ -71,7 +71,7 @@ export const Achievements = () => {
     {
       id: 8,
       date: '08. 2021:',
-      title: ['Our first development af a DevTool for blockchain developers:', <a href="https://github.com/RedDuck-Software/SolidityProvider">https://github.com/RedDuck-Software/SolidityProvider</a>],
+      title: ['Our first development af a DevTool for blockchain developers - ', <a href="https://github.com/RedDuck-Software/SolidityProvider">github.com</a>],
       imageSrc: Achievements3
     },
     {
