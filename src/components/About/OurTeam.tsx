@@ -67,7 +67,7 @@ export const OurTeam = () => {
           ourTeamList.map((item) => (
             <div key={item.id} className="our-team-list-item desktop">
               <div className="our-team-list-item-wrapper">
-                <img src={item.src} alt="Person" />
+                <img loading="lazy" src={item.src} alt="Person" />
                 <div className="our-team-list-item-wrapper-name">{item.name}</div>
                 <div className="our-team-list-item-wrapper-position">{item.position}</div>
               </div>
@@ -84,7 +84,7 @@ export const OurTeam = () => {
         {
           ourTeamList.map((item) => (
             <div key={item.id} className="our-team-list-item tablet">
-              <img className="our-team-list-item-left" src={item.src} alt="Person" />
+              <img loading="lazy" className="our-team-list-item-left" src={item.src} alt="Person" />
               <div className="our-team-list-item-right">
                 <div className="our-team-list-item-right-name">{item.name}</div>
                 <div className="our-team-list-item-right-position">{item.position}</div> 
@@ -103,7 +103,7 @@ export const OurTeam = () => {
           ourTeamList.map((item) => (
             <div key={item.id} className="our-team-list-item mobile">
               <div className="our-team-list-item-wrapper">
-                <img src={item.src} alt="Person" />
+                <img loading="lazy" src={item.src} alt="Person" />
                 <div className="our-team-list-item-wrapper-name">{item.name}</div>
                 <div className="our-team-list-item-wrapper-position">{item.position}</div>
               </div>

@@ -81,8 +81,8 @@ export const ContactsLinks = () => {
               }
               <a href={item.link} key={item.id} className="contacts-links-list-item">
                 <div className="contacts-links-list-item-wrapper">
-                  <img src={item.imageSrc} alt="Social link" />
-                  <img src={item.imageSrcHover} alt="Social link" />
+                  <img loading="lazy" src={item.imageSrc} alt="Social link" />
+                  <img loading="lazy" src={item.imageSrcHover} alt="Social link" />
                 </div>
               </a> 
               {

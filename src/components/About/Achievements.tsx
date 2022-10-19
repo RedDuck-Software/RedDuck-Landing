@@ -124,11 +124,11 @@ export const Achievements = () => {
                 <div className="achievements-list-item-left-date">{item.date}</div>
               </div>
               <div className="arrows">
-                <img src={RoadmapArrow} alt="Arrow" className="achievements-list-item-roadmap" />
+                <img loading="lazy" src={RoadmapArrow} alt="Arrow" className="achievements-list-item-roadmap" />
                 <GradientArrow className="achievements-list-item-arrow" />
               </div>
               <div className="achievements-list-item-right">
-                <img src={item.imageSrc} alt="Achievement" />
+                <img loading="lazy" src={item.imageSrc} alt="Achievement" />
                 <p>{item.title}</p>
               </div>
             </div>
@@ -144,11 +144,11 @@ export const Achievements = () => {
                 <div className="achievements-list-item-left-date">{item.date}</div>
               </div>
               <div className="arrows">
-                <img src={RoadmapArrow} alt="Arrow" className="achievements-list-item-roadmap" />
+                <img loading="lazy" src={RoadmapArrow} alt="Arrow" className="achievements-list-item-roadmap" />
                 <GradientArrow className="achievements-list-item-arrow" />
               </div>
               <div className="achievements-list-item-right">
-                <img src={item.imageSrc} alt="Achievement" />
+                <img loading="lazy" src={item.imageSrc} alt="Achievement" />
                 <p>{item.title}</p>
               </div>
             </div>

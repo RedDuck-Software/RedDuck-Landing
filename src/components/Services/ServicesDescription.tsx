@@ -11,7 +11,7 @@ export const ServicesDescription = (props: any) => {
           props.servicesDescription.map((item: any) => (
             <div key={item.id} className="services-description-list-item">
               <div className="services-description-list-item-left">
-                <img src={item.imageSrc} alt={item.title} />
+                <img loading="lazy" src={item.imageSrc} alt={item.title} />
                 <p>{item.description}</p>
               </div>
               <div className="services-description-list-item-right">

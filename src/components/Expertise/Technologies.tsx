@@ -267,14 +267,14 @@ export const Technologies = () => {
                   ></div>
                   <div className="technologies-cards-item-number">{item.id}</div>
                   <div className="technologies-cards-item-title">
-                    <img src={item.imageSrc} alt={item.title} />
+                    <img loading="lazy" src={item.imageSrc} alt={item.title} />
                     <p>{item.title}</p>
                   </div>
                   <div className="technologies-cards-item-technologies-list">
                     {
                       item.technologies?.map((technology) => (
                         <div key={technology.id} className="technologies-cards-item-technologies-list-item">
-                          <img src={technology.imageSrc} alt={technology.title} />
+                          <img loading="lazy" src={technology.imageSrc} alt={technology.title} />
                           <p>{technology.title}</p>
                         </div>
                       ))
@@ -300,14 +300,14 @@ export const Technologies = () => {
                 ></div>
                 <div className="technologies-cards-item-number">{item.id}</div>
                 <div className="technologies-cards-item-title">
-                  <img src={item.imageSrc} alt={item.title} />
+                  <img loading="lazy" src={item.imageSrc} alt={item.title} />
                   <p>{item.title}</p>
                 </div>
                 <div className="technologies-cards-item-technologies-list">
                   {
                     item.technologies?.map((technology) => (
                       <div key={technology.id} className="technologies-cards-item-technologies-list-item">
-                        <img src={technology.imageSrc} alt={technology.title} />
+                        <img loading="lazy" src={technology.imageSrc} alt={technology.title} />
                         <p>{technology.title}</p>
                       </div>
                     ))

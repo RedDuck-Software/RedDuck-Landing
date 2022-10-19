@@ -35,13 +35,13 @@ export const Footer = () => {
           <p className='footer-parts-right-address'>© 2023. All rights reserved. <br/>Akademika Pavlova 155 Street, Kharkiv, Ukraine</p>
           <div className="footer-parts-right-socials">
             <a href='https://jobs.dou.ua/companies/red-duck/' className="footer-parts-right-socials-icon">
-              <img src={DouLogo} alt="Dou" />
+              <img loading="lazy" src={DouLogo} alt="Dou" />
             </a>
             <a href='https://www.facebook.com/profile.php?id=100076952286530' className="footer-parts-right-socials-icon">
               <FacebookIcon />
             </a>
             <a href='https://redduck.medium.com/' className="footer-parts-right-socials-icon">
-              <img src={MediumLogo} alt="Dou" id='medium'/>
+              <img loading="lazy" src={MediumLogo} alt="Dou" id='medium'/>
             </a>
             <a href='https://www.linkedin.com/company/redduckdev/' className="footer-parts-right-socials-icon">
               <LinkedinIcon />
@@ -50,7 +50,7 @@ export const Footer = () => {
         </div>
       </div>
       <Texture textureStyles={{left: '50%', bottom: '-1700px', transform: 'translateX(-50%) scale(1.1)'}}/>
-      <img src={Logo} alt='Redduck logo' className='redduck-logo'/>
+      <img loading="lazy" src={Logo} alt='Redduck logo' className='redduck-logo'/>
     </footer>
   )
 }

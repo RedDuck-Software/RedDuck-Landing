@@ -70,7 +70,7 @@ export const Domain = () => {
             {
               domainCards.map((item) => (
                 <div key={item.id} className="domain-cards-item">
-                  <img src={item.imageSrc} alt={item.title} />
+                  <img loading="lazy" src={item.imageSrc} alt={item.title} />
                   <h5 className="domain-cards-item-title">{item.title}</h5>
                 </div>
               ))
@@ -90,7 +90,7 @@ export const Domain = () => {
             {
               domainCards.map((item) => (
                 <SwiperSlide key={item.id} className="domain-cards-item">
-                  <img src={item.imageSrc} alt={item.title} />
+                  <img loading="lazy" src={item.imageSrc} alt={item.title} />
                   <h5 className="domain-cards-item-title">{item.title}</h5>
                 </SwiperSlide>
               ))

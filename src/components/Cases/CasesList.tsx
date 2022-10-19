@@ -198,7 +198,7 @@ export const CasesList = () => {
             <>
               <div key={item.id} className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
                 <div className="cases-list-item-wrapper">
-                  <img src={item.imageSrc} alt={item.title} />
+                  <img loading="lazy" src={item.imageSrc} alt={item.title} />
                   <p>{item.title}</p>
                 </div>
               </div>
@@ -207,7 +207,7 @@ export const CasesList = () => {
             :
             <div key={item.id}  className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
               <div className="cases-list-item-wrapper">
-                <img src={item.imageSrc} alt={item.title} />
+                <img loading="lazy" src={item.imageSrc} alt={item.title} />
                 <p>{item.title}</p>
               </div>
             </div>
@@ -221,7 +221,7 @@ export const CasesList = () => {
             <>
               <div key={item.id} className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
                 <div className="cases-list-item-wrapper">
-                  <img src={item.imageSrc} alt={item.title} />
+                  <img loading="lazy" src={item.imageSrc} alt={item.title} />
                   <p>{item.title}</p>
                 </div>
               </div>
@@ -230,7 +230,7 @@ export const CasesList = () => {
             :
             <div key={item.id}  className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
               <div className="cases-list-item-wrapper">
-                <img src={item.imageSrc} alt={item.title} />
+                <img loading="lazy" src={item.imageSrc} alt={item.title} />
                 <p>{item.title}</p>
               </div>
             </div>

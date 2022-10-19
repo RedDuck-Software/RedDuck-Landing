@@ -62,7 +62,7 @@ export const Programs = () => {
         {
           programsList.map((item) => (
             <div key={item.id} className="programs-list-item">
-              <img src={item.imageSrc} alt="Education" />
+              <img loading="lazy" src={item.imageSrc} alt="Education" />
               <p>{item.title}</p>
             </div>
           ))

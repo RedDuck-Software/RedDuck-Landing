@@ -85,9 +85,9 @@ export const AboutIntro = () => {
         <p className="mobile">
         We make sure that our employees and everyone else can improve their knowledge and soft skills with RedDuck
         </p>
-        <img src={AboutUsImg} alt="About us" className="about-intro-img"/>
-        <img src={RDLogoColor} alt="Red Duck Logo" className="about-intro-logo" />
-        <img src={RDLogoColorMobile} alt="Red Duck Logo" className="about-intro-logo-mobile" />
+        <img loading="lazy" src={AboutUsImg} alt="About us" className="about-intro-img"/>
+        <img loading="lazy" src={RDLogoColor} alt="Red Duck Logo" className="about-intro-logo" />
+        <img loading="lazy" src={RDLogoColorMobile} alt="Red Duck Logo" className="about-intro-logo-mobile" />
       </div>
       {
           (screenWidth >= 1024) ?
@@ -95,7 +95,7 @@ export const AboutIntro = () => {
             {
               aboutList.map((item) => (
                 <div key={item.id} className="about-intro-list-item">
-                  <img src={item.imageSrc} alt="About us" />
+                  <img loading="lazy" src={item.imageSrc} alt="About us" />
                   <p>{item.title}</p>
                 </div>
               ))
@@ -115,7 +115,7 @@ export const AboutIntro = () => {
             {
               aboutList.map((item) => (
                 <SwiperSlide key={item.id} className="about-intro-list-item">
-                  <img src={item.imageSrc} alt="About us" />
+                  <img loading="lazy" src={item.imageSrc} alt="About us" />
                   <p>{item.title}</p>
                 </SwiperSlide>
               ))

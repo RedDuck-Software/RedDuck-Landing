@@ -12,14 +12,14 @@ export const RDLogoWithHands = () => {
   return (
     <>
       <div className="logo-with-hands">
-        <img src={LogoPart1} alt="Logo" className="logo-with-hands-logo"/>
-        <img src={LogoPart2} alt="Logo" className="logo-with-hands-logo"/>
+        <img loading="lazy" src={LogoPart1} alt="Logo" className="logo-with-hands-logo"/>
+        <img loading="lazy" src={LogoPart2} alt="Logo" className="logo-with-hands-logo"/>
         <div className="logo-with-hands-gear">
-          <img src={RedGear} alt="Logo"/>
-          <img src={BlueGear} alt="Logo"/>
+          <img loading="lazy" src={RedGear} alt="Logo"/>
+          <img loading="lazy" src={BlueGear} alt="Logo"/>
         </div>
-        <img src={HandRed} alt="Hand" className="logo-with-hands-hands-red"/>
-        <img src={HandBlue} alt="Hand" className="logo-with-hands-hands-blue"/>
+        <img loading="lazy" src={HandRed} alt="Hand" className="logo-with-hands-hands-red"/>
+        <img loading="lazy" src={HandBlue} alt="Hand" className="logo-with-hands-hands-blue"/>
       </div>
       <Texture textureStyles={{left: '50%', top: '-10%', transform: 'translateX(-50%) scale(0.7)'}}/>
     </>

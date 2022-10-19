@@ -15,7 +15,7 @@ export const PageLoader = () => {
   return (
     <>
       <div className="page-loader">
-        <img src={RDLoaderLogo} alt="Logo" />
+        <img loading="lazy" src={RDLoaderLogo} alt="Logo" />
         <div className="page-loader-bar">
           <div style={loadStatus ? {width: '10.5rem'} : {}} className="page-loader-bar-status"></div>
         </div>

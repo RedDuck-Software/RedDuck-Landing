@@ -18,7 +18,7 @@ export const ArticlesList = (props:any) => {
           props.articles.data.map((article:any) => (
             <a href={article.link} target="_blank" rel="noreferrer" key={article.link} className="articles-list-item">
               <div className="articles-list-item-wrapper">
-                <img src={getArticleImage(article)} alt="" />
+                <img loading="lazy" src={getArticleImage(article)} alt="" />
                 <div className="articles-list-item-title">{article.title}</div>
                 <div dangerouslySetInnerHTML={{__html: article.content}} className="articles-list-item-description"></div>
                 <hr/>
