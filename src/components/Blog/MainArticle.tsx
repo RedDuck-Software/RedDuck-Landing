@@ -26,7 +26,7 @@ export const MainArticle = (props: any) => {
   return (
     <a href={props.article.link} rel="noreferrer" target="_blank" className="main-article">
       <div className="main-article-left"> 
-        <img src={articleImg.src} alt="Article"/>
+        <img loading="lazy" src={articleImg.src} alt="Article"/>
       </div>
       <div className="main-article-right">
       <Texture textureStyles={{left: '-2rem', top: '-12rem', transform: 'scale(0.5)', zIndex: '1', opacity: '0.5'}}/>

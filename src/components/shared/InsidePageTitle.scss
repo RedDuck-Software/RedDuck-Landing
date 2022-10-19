@@ -56,3 +56,9 @@
     background: linear-gradient(89.99deg, rgba(82, 89, 255, 0) -9.28%, rgba(82, 89, 255, 0) -1.21%, rgba(82, 89, 254, 0.115411) 4.39%, #5156F7 33.41%, rgba(247, 189, 181, 0.63) 47.05%, #9A2E00 57.21%, rgba(154, 46, 0, 0) 87.34%);
   }
 }
+
+@media (max-width: 375px) {
+  .inside-page-title-top {
+    margin-top: 0rem;
+  }
+}

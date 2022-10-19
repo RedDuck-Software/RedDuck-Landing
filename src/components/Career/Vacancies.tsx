@@ -29,7 +29,7 @@ export const Vacancies = () => {
           vacancies.map((item) => (
             <div key={item.id} className={item.status ? 'vacancies-list-item' : 'vacancies-list-item inactive'}>
               <div className="vacancies-list-item-left">
-                <img src={item.status ? VacancyIcon : VacancyIconInactive} alt="Vacancy Icon" />
+                <img loading="lazy" src={item.status ? VacancyIcon : VacancyIconInactive} alt="Vacancy Icon" />
                 <div className="vacancies-list-item-left-date">{item.publishDate}</div>
                 <button>{item.status ? 'open' : 'closed'}</button>
               </div>

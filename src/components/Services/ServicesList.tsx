@@ -54,7 +54,7 @@ export const ServicesList = () => {
             servicesList.map((item) => (
               <div key={item.id} className="services-list-item">
                 <div className="services-list-item-id">{item.id + 1}</div>
-                <img src={item.imageSrc} alt={item.title} />
+                <img loading="lazy" src={item.imageSrc} alt={item.title} />
                 <div className="services-list-item-title">{item.titleHTML}</div>
               </div>
             ))
@@ -75,7 +75,7 @@ export const ServicesList = () => {
             servicesList.map((item) => (
               <SwiperSlide key={item.id} className="services-list-item">
                 <div className="services-list-item-id">{item.id + 1}</div>
-                <img src={item.imageSrc} alt={item.title} />
+                <img loading="lazy" src={item.imageSrc} alt={item.title} />
                 <div className="services-list-item-title">{item.titleHTML}</div>
               </SwiperSlide>
             ))

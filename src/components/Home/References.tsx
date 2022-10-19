@@ -49,7 +49,7 @@ export const References = () => {
           referencesList.map((item) => (
             <a href={item.link} key={item.id} className="references-items-item">
               <div className="references-items-item-wrapper">
-                <img src={item.imgSrc} alt={item.name} />
+                <img loading="lazy" src={item.imgSrc} alt={item.name} />
               </div>
             </a>
           ))
