@@ -8,7 +8,7 @@ export const ContactsIntro = () => {
     <section className="contacts-intro">
       <div className="contacts-intro-wrapper">
         <img loading="lazy" src={ContactsImg} alt="Contacts" />
-        <a href="mailto:contact@redduck.io">contact@redduck.io</a>
+        <a href="mailto:sales@redduck.io">sales@redduck.io</a>
         <p>Write Email</p>
       </div>
       <ScrollArrow />
