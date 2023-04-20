@@ -15,8 +15,8 @@ export const Services = () => {
     {
       id: 0,
       title: 'Experienced team',
-      // eslint-disable-next-line react/jsx-key
       description: [
+        // eslint-disable-next-line react/jsx-key
         <strong>
           RedDuck team consists of experienced managers and developers,
         </strong>,
@@ -27,8 +27,8 @@ export const Services = () => {
     {
       id: 1,
       title: 'We value your time',
-      // eslint-disable-next-line react/jsx-key
       description: [
+        // eslint-disable-next-line react/jsx-key
         <strong>We know how to value time,</strong>,
         ' therefore we assemble a special team ready to work within a few days. We can quickly increase or decrease the size according to the needs of the client.',
       ],
@@ -37,8 +37,8 @@ export const Services = () => {
     {
       id: 2,
       title: 'Attention to security ',
-      // eslint-disable-next-line react/jsx-key
       description: [
+        // eslint-disable-next-line react/jsx-key
         <strong>We pay special attention to security</strong>,
         ' and we understand the importance of strict security protocols that we follow at all stages of development.',
       ],

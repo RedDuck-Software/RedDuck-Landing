@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 
 import { ReactComponent as ArrowLeft } from './../../assets/img/icons/arrow-left-icon.svg';
@@ -12,6 +12,13 @@ import PlayButton from './../../assets/img/play-button.png';
 
 export const Intro = () => {
   const [isVideoOpened, setIsVideoOpened] = useState(false);
+
+  useEffect(() => {
+    const htmlTag = document.querySelector('html');
+    !isVideoOpened
+      ? (htmlTag!.style.overflowY = 'auto')
+      : (htmlTag!.style.overflowY = 'hidden');
+  }, [isVideoOpened]);
 
   return (
     <section className="intro">

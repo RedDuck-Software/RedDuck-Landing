@@ -23,8 +23,8 @@ export const About = () => {
     {
       id: 1,
       title: 'Reduce operating costs',
-      // eslint-disable-next-line react/jsx-key
       description: [
+        // eslint-disable-next-line react/jsx-key
         <strong>
           Our experts will evaluate your ideas and underline all the pros and
           cons.
