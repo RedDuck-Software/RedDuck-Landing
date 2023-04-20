@@ -2,8 +2,10 @@ import React from "react";
 import moment from 'moment';
 import { SectionTitle } from "../shared/SectionTitle";
 import './ArticlesList.scss';
+import useMatchBreakpoints from "../../hooks/useMatchBreakpoints";
 
 export const ArticlesList = (props:any) => {
+    const {isMobile} = useMatchBreakpoints()
   const getArticleImage = (article:any) => {
     const div = document.createElement('div')
     div.innerHTML = article.content
@@ -12,7 +14,7 @@ export const ArticlesList = (props:any) => {
   }
   return (
     <>
-      <SectionTitle>Other articles</SectionTitle>
+      <SectionTitle>{isMobile ? "Articles" : 'Other articles'}</SectionTitle>
       <section className="articles-list">
         {
           props.articles.data.map((article:any) => (
@@ -30,6 +32,6 @@ export const ArticlesList = (props:any) => {
           ))
         }
       </section>
-    </> 
+    </>
   )
 }

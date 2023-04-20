@@ -189,7 +189,7 @@
 
       &:nth-of-type(2) {
         margin-top: 64px;
-        margin-bottom: 64px;
+        margin-bottom: 192px;
       }
 
       &-item {
@@ -241,67 +241,6 @@
           }
         }
       }
-      //
-      //  &:nth-of-type(even) {
-      //    transform: none !important;
-      //
-      //    &::after {
-      //      transform: scaleX(-100%) !important;
-      //    }
-      //
-      //    .cases-list-item-wrapper {
-      //      &::after {
-      //      }
-      //    }
-      //  }
-      //
-      //  &:first-of-type {
-      //    transform: none !important;
-      //    border-top-left-radius: 30px !important;
-      //
-      //    &::after {
-      //      transform: scaleX(-100%) !important;
-      //      border-top-left-radius: 30px !important;
-      //    }
-      //
-      //    .cases-list-item-wrapper {
-      //      border-top-left-radius: 30px !important;
-      //
-      //      &::after {
-      //        border-top-left-radius: 30px !important;
-      //      }
-      //    }
-      //  }
-      //
-      //  &:last-of-type {
-      //    transform: none !important;
-      //    border-bottom-right-radius: 30px !important;
-      //
-      //    &::after {
-      //      transform: scaleX(-100%) !important;
-      //      border-radius: 0 !important;
-      //      border-bottom-left-radius: 30px !important;
-      //    }
-      //
-      //    .cases-list-item-wrapper {
-      //      border-radius: 0 !important;
-      //      border-bottom-right-radius: 30px !important;
-      //
-      //      &::after {
-      //        border-radius: 0 !important;
-      //        border-bottom-right-radius: 30px !important;
-      //      }
-      //    }
-      //  }
-      //
-      //  &:nth-of-type(odd) {
-      //    transform: none !important;
-      //
-      //    &::after {
-      //      transform: none !important;
-      //    }
-      //  }
-      //}
     }
   }
 }

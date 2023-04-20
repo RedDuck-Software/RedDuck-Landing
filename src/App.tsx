@@ -37,7 +37,7 @@ function App() {
     }
   });
   return (
-    ( loadStatus ? 
+    ( loadStatus ?
       <div className="App">
         <Header />
         <Routes>
@@ -45,7 +45,6 @@ function App() {
           <Route path="expertise" element={<Expertise/>}/>
           <Route path="services" element={<Services/>} />
           <Route path="cases" element={<Cases/>} />
-          <Route path="career" element={<Career/>} />
           <Route path="education" element={<Education/>} />
           <Route path="contacts" element={<Contacts/>} />
           <Route path="about" element={<About/>} />

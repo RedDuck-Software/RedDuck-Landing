@@ -46,7 +46,7 @@
           margin-bottom: 1.875rem;
           max-width: 80%;
           &::before {
-            content: "";  
+            content: "";
             display: inline-block;
             background: linear-gradient(264.11deg, #BD24C4 16.26%, #2179FF 76.75%);
             width: 0.5rem;
@@ -149,7 +149,7 @@
             margin-bottom: 1.25rem;
             max-width: 80%;
             &::before {
-              content: "";  
+              content: "";
               display: inline-block;
               background: linear-gradient(264.11deg, #BD24C4 16.26%, #2179FF 76.75%);
               width: 0.5rem;
@@ -256,7 +256,7 @@
             margin-bottom: 1.25rem;
             max-width: 80%;
             &::before {
-              content: "";  
+              content: "";
               display: inline-block;
               background: linear-gradient(264.11deg, #BD24C4 16.26%, #2179FF 76.75%);
               width: 0.5rem;
@@ -286,5 +286,9 @@
   }
   .mobile {
     display: flex;
+    height: unset;
+  }
+  .our-team-button{
+    width: unset;
   }
 }

@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 20.25rem;
+    row-gap: 20px;
     &-item {
       width: 20.25rem;
       height: 11.875rem;
@@ -91,112 +92,7 @@
           }
         }
       }
-      &:first-of-type {
-        border-bottom-right-radius: 0px;
-        &::after {
-          border-bottom-right-radius: 0px;
-        }
-        .contacts-links-list-item-wrapper {
-          border-bottom-right-radius: 0px;
-          &::after {
-            border-bottom-right-radius: 0px;
-          }
-        }
-      }
-      &:nth-of-type(2) {
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-        &::after {
-          border-bottom-right-radius: 0px;
-          border-bottom-left-radius: 0px;
-        }
-        .contacts-links-list-item-wrapper {
-          border-bottom-right-radius: 0px;
-          border-bottom-left-radius: 0px;
-          &::after {
-            border-bottom-right-radius: 0px;
-            border-bottom-left-radius: 0px;
-          }
-        }
-      }
-      &:nth-of-type(3) {
-        border-bottom-left-radius: 0px;
-        &::after {
-          border-bottom-left-radius: 0px;
-        }
-        .contacts-links-list-item-wrapper {
-          border-bottom-left-radius: 0px;
-          &::after {
-            border-bottom-left-radius: 0px;
-          }
-        }
-      }
-      &:nth-of-type(4) {
-        border-radius: 0px;
-        &::after {
-          border-radius: 0px;
-          transform: scaleX(-100%);
-        }
-        .contacts-links-list-item-wrapper {
-          border-radius: 0px;
-          &::after {
-            border-radius: 0px;
-          }
-        }
-      }
-      &:nth-of-type(5) {
-        border-radius: 0px;
-        &::after {
-          border-radius: 0px;
-          transform: scaleX(-100%);
-        }
-        .contacts-links-list-item-wrapper {
-          border-radius: 0px;
-          &::after {
-            border-radius: 0px;
-          }
-        }
-      }
-      &:nth-of-type(6) {
-        border-top-right-radius: 0px;
-        &::after {
-          border-top-right-radius: 0px;
-        }
-        .contacts-links-list-item-wrapper {
-          border-top-right-radius: 0px;
-          &::after {
-            border-top-right-radius: 0px;
-          }
-        }
-      }
-      &:nth-of-type(7) {
-        border-top-right-radius: 0px;
-        border-top-left-radius: 0px;
-        &::after {
-          border-top-right-radius: 0px;
-          border-top-left-radius: 0px;
-        }
-        .contacts-links-list-item-wrapper {
-          border-top-right-radius: 0px;
-          border-top-left-radius: 0px;
-          &::after {
-            border-top-right-radius: 0px;
-            border-top-left-radius: 0px;
-          }
-        }
-      }
-      &:nth-of-type(8) {
-        border-top-left-radius: 0px;
-        &::after {
-          border-top-left-radius: 0px;
-        }
-        .contacts-links-list-item-wrapper {
-          border-top-left-radius: 0px;
-          &::after {
-            border-top-left-radius: 0px;
-          }
-        }
-      }
+
     }
     .row {
       opacity: 0;

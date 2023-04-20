@@ -6,8 +6,10 @@ import OutTeam2 from './../../assets/img/ourTeam2.png';
 import OutTeam3 from './../../assets/img/ourTeam3.png';
 import { Texture } from "../shared/Texture";
 import './OurTeam.scss';
+import {useLocation, useNavigate} from "react-router-dom";
 
 export const OurTeam = () => {
+  const navigate = useNavigate()
   const ourTeamList = [
     {
       id: 0,
@@ -25,38 +27,6 @@ export const OurTeam = () => {
         },
       ]
     },
-    {
-      id: 1,
-      src: OutTeam2,
-      name: 'Evgeniy Kirichenko',
-      position: 'COO',
-      description: [
-        {
-          id: 100,
-          text: '10+ years in C-level management'
-        },
-        {
-          id: 101,
-          text: 'Institutional Sales, DeFi expert'
-        },
-      ]
-    },
-    {
-      id: 2,
-      src: OutTeam3,
-      name: 'German Solovyov',
-      position: 'CFO',
-      description: [
-        {
-          id: 100,
-          text: '10+ years in FinTech and Consulting'
-        },
-        {
-          id: 101,
-          text: 'Extensive experience in DeFi and blockchain'
-        },
-      ]
-    }
   ]
   return (
     <section className="our-team">
@@ -87,7 +57,7 @@ export const OurTeam = () => {
               <img loading="lazy" className="our-team-list-item-left" src={item.src} alt="Person" />
               <div className="our-team-list-item-right">
                 <div className="our-team-list-item-right-name">{item.name}</div>
-                <div className="our-team-list-item-right-position">{item.position}</div> 
+                <div className="our-team-list-item-right-position">{item.position}</div>
                 <ul>
                   {
                     item.description.map((el) => (
@@ -119,7 +89,7 @@ export const OurTeam = () => {
         }
       </div>
       <ScrollArrow />
-      <button className="our-team-button">Contact us</button>
+      <button className="our-team-button" onClick={() => navigate('/contacts')}>Contact us</button>
       <Texture textureStyles={{left: '-70%', top: '10%', transform: 'scale(0.7)'}}/>
     </section>
   )

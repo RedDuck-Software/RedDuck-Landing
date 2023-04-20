@@ -5,8 +5,10 @@ import { ServicesDescription } from '../components/Services/ServicesDescription'
 import ExperiencedTeam from './../assets/img/experiencedTeam.png';
 import ValueTime from './../assets/img/valueTime.png';
 import AttentionSecurity from './../assets/img/attentionSecurity.png';
+import useMatchBreakpoints from "../hooks/useMatchBreakpoints";
 
 export const Services = () => {
+  const {isMobile} = useMatchBreakpoints()
   const servicesDescription = [
     {
       id: 0,
@@ -31,7 +33,7 @@ export const Services = () => {
     <>
       <InsidePageTitle title="Services we provide"/>
       <ServicesList />
-      <ServicesDescription style={{marginBottom: '18.75rem'}} servicesDescription={servicesDescription}/>
+      <ServicesDescription style={{marginBottom: isMobile? '192px':'18.75rem'}} servicesDescription={servicesDescription}/>
     </>
   )
 }

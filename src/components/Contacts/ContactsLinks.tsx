@@ -17,8 +17,10 @@ import FacebookLogoGradient from './../../assets/img/facebook-logo-gradient.png'
 import EmailLogoGradient from './../../assets/img/e-mail-logo-gradient.png';
 import { Texture } from "../shared/Texture";
 import './ContactsLinks.scss';
+import useMatchBreakpoints from "../../hooks/useMatchBreakpoints";
 
 export const ContactsLinks = () => {
+  const {isMobile} = useMatchBreakpoints()
   const contactsList = [
     {
       id: 0,
@@ -77,16 +79,16 @@ export const ContactsLinks = () => {
           contactsList.map((item) => (
             <>
               {
-                item.id === 3 ? <hr className="row"/> : ''
+                item.id === 3 && !isMobile ? <hr className="row"/> : ''
               }
-              <a href={item.link} key={item.id} className="contacts-links-list-item">
+              <a href={item.link} key={item.id} className="contacts-links-list-item" target='_blank'>
                 <div className="contacts-links-list-item-wrapper">
                   <img loading="lazy" src={item.imageSrc} alt="Social link" />
                   <img loading="lazy" src={item.imageSrcHover} alt="Social link" />
                 </div>
-              </a> 
+              </a>
               {
-                item.id === 4 ? <hr className="row"/> : ''
+                item.id === 4 && !isMobile ? <hr className="row"/> : ''
               }
             </>
           ))
