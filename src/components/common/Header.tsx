@@ -7,17 +7,17 @@ import { ReactComponent as FacebookIcon } from './../../assets/img/icons/fb-icon
 import { ReactComponent as LinkedinIcon } from './../../assets/img/icons/linkedin-icon.svg';
 import { ReactComponent as TwitterIcon } from './../../assets/img/icons/twitter-icon.svg';
 import './Header.scss';
- 
+
 export const Header = () => {
   const location = useLocation()
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const openMenu = () => {
-    setIsMenuOpened(!isMenuOpened);
+    setIsMenuOpened(prev => !prev);
   }
   useEffect(() => {
     let htmlTag = document.querySelector('html');
     !isMenuOpened ? htmlTag!.style.overflowY = 'auto' : htmlTag!.style.overflowY = 'hidden'
-  }, [location, isMenuOpened])
+  }, [isMenuOpened])
   return (
     <header className={location.pathname !== '/' ? 'header-index' : ''}>
       <Texture className="texture" textureStyles={{left: '-1050px', top: '-1000px', transform: 'scale(0.5)'}}/>
@@ -31,7 +31,7 @@ export const Header = () => {
         <li><Link to="/blog">Blog</Link></li>
         <li><Link to="/contacts">Contact us</Link></li>
         <li><Link to="/about">About us</Link></li>
-        <li className='lang-changer'>En</li>
+        {/*<li className='lang-changer'>En</li>*/}
       </nav>
       <div onClick={openMenu} className={isMenuOpened ? 'header-menu-icon active' : 'header-menu-icon'}>
         <div className="rectangle"></div>
@@ -42,13 +42,10 @@ export const Header = () => {
         <ul>
           <li><Link to="/expertise" onClick={() => {setIsMenuOpened(false)}}>Expertise</Link></li>
           <li><Link to="/services" onClick={() => {setIsMenuOpened(false)}}>Services</Link></li>
-          <hr/>
           <li><Link to="/cases" onClick={() => {setIsMenuOpened(false)}}>Cases</Link></li>
           <li><Link to="/career" onClick={() => {setIsMenuOpened(false)}}>Career</Link></li>
-          <hr/>
           <li><Link to="/education" onClick={() => {setIsMenuOpened(false)}}>Education</Link></li>
           <li><Link to="/blog" onClick={() => {setIsMenuOpened(false)}}>Blog</Link></li>
-          <hr/>
           <li><Link to="/contacts" onClick={() => {setIsMenuOpened(false)}}>Contact us</Link></li>
           <li><Link to="/about" onClick={() => {setIsMenuOpened(false)}}>About us</Link></li>
         </ul>

@@ -31,98 +31,118 @@ import CentralizedExchanges from './../../assets/img/centralizedExchanges.png';
 import TradingStrategies from './../../assets/img/tradingStrategies.png';
 import BankingSoftware from './../../assets/img/bankingSoftware.png';
 import { Texture } from "../shared/Texture";
+import useMatchBreakpoints from "../../hooks/useMatchBreakpoints";
 
 export const CasesList = () => {
+  const {isTablet, isMobile} = useMatchBreakpoints()
   const casesListOne = [
     {
       id: 0,
       title: 'Private blockchains',
-      imageSrc: PrivateBlockchains
+      imageSrc: PrivateBlockchains,
+      borders: (isTablet || isMobile) ? 'rb blb' : 'brb'
     },
     {
       id: 1,
       title: 'Smart contracts',
-      imageSrc: SmartContracts
+      imageSrc: SmartContracts,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'blb brb'
     },
     {
       id: 2,
       title: 'DeFi',
-      imageSrc: DeFi
+      imageSrc: DeFi,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb rb'
     },
     {
       id: 3,
       title: 'NFT',
-      imageSrc: NFT
+      imageSrc: NFT,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb'
     },
     {
       id: 4,
       title: 'Dapps',
-      imageSrc: Dapps
+      imageSrc: Dapps,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb'
     },
     {
       id: 5,
       title: 'Blockchain indexers',
-      imageSrc: BlockchainIndexers
+      imageSrc: BlockchainIndexers,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb rb'
     },
     {
       id: 6,
       title: 'Wallet Development',
-      imageSrc: WalletDevelopment
+      imageSrc: WalletDevelopment,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb rb'
     },
     {
       id: 7,
       title: 'Staking, Launchpads',
-      imageSrc: StakingLaunchpads
+      imageSrc: StakingLaunchpads,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb'
     },
     {
       id: 8,
       title: 'Vesting',
-      imageSrc: Vesting
+      imageSrc: Vesting,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb'
     },
     {
       id: 9,
       title: 'Launchpads',
-      imageSrc: Launchpads
+      imageSrc: Launchpads,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb lb'
     },
     {
       id: 10,
       title: 'Bridge',
-      imageSrc: Bridge
+      imageSrc: Bridge,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb lb'
     },
     {
       id: 11,
       title: 'IDO / Pre-sale',
-      imageSrc: IDO
+      imageSrc: IDO,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb'
     },
     {
       id: 12,
       title: 'NFT marketplaces',
-      imageSrc: NFTMarketplaces
+      imageSrc: NFTMarketplaces,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb'
     },
     {
       id: 13,
       title: 'Blockchain explorers',
-      imageSrc: BlockchainExplorers
+      imageSrc: BlockchainExplorers,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb lb'
     },
     {
       id: 14,
       title: 'NFT games',
-      imageSrc: NFTGames
+      imageSrc: NFTGames,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb lb'
     },
     {
       id: 15,
       title: 'DeFi Backtesting',
-      imageSrc: DeFiBacktesting
+      imageSrc: DeFiBacktesting,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb'
     },
     {
       id: 16,
       title: 'CEX/DEX',
-      imageSrc: CEX
+      imageSrc: CEX,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'trb'
     },
     {
       id: 17,
       title: 'DAO',
-      imageSrc: DAO
+      imageSrc: DAO,
+      borders: (isTablet || isMobile) ? 'trb lb' : 'trb tlb'
     },
 
   ]
@@ -131,62 +151,74 @@ export const CasesList = () => {
     {
       id: 0,
       title: 'Trading Software',
-      imageSrc: TradingSoftware
+      imageSrc: TradingSoftware,
+      borders: (isTablet || isMobile) ? 'rb blb' : 'brb'
     },
     {
       id: 1,
       title: 'Bridges',
-      imageSrc: Bridges
+      imageSrc: Bridges,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'brb blb'
     },
     {
       id: 2,
       title: 'Payment Systems',
-      imageSrc: PaymentSystems
+      imageSrc: PaymentSystems,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb rb'
     },
     {
       id: 3,
       title: 'Crypto Exchanges',
-      imageSrc: CryptoExchanges
+      imageSrc: CryptoExchanges,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb'
     },
     {
       id: 4,
       title: 'Marketplaces',
-      imageSrc: Marketplaces
+      imageSrc: Marketplaces,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb'
     },
     {
       id: 5,
       title: 'Stop Losses and Profit Targets',
-      imageSrc: Profit
+      imageSrc: Profit,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb rb'
     },
     {
       id: 6,
       title: 'Trading Backtesting',
-      imageSrc: TradingBacktesting
+      imageSrc: TradingBacktesting,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb rb'
     },
     {
       id: 7,
       title: 'Indicators',
-      imageSrc: Indicators
+      imageSrc: Indicators,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'lb'
     },
     {
       id: 8,
       title: 'Trading engines',
-      imageSrc: TradingEngines
+      imageSrc: TradingEngines,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb'
     },
     {
       id: 9,
       title: 'Centralized Exchanges',
-      imageSrc: CentralizedExchanges
+      imageSrc: CentralizedExchanges,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'rb lb'
     },
     {
       id: 10,
       title: 'Trading Strategies',
-      imageSrc: TradingStrategies
+      imageSrc: TradingStrategies,
+      borders: (isTablet || isMobile) ? 'rb lb' : 'trb tlb'
     },
     {
       id: 11,
       title: 'Banking Software',
-      imageSrc: BankingSoftware
+      imageSrc: BankingSoftware,
+      borders: (isTablet || isMobile) ? 'trb lb' : 'tlb'
     },
   ]
   return (
@@ -194,47 +226,33 @@ export const CasesList = () => {
       <div className="cases-list">
         {
           casesListOne.map((item) => (
-            ((item.id + 1) % 3 === 0 ?
             <>
-              <div key={item.id} className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
+              <div key={item.id} className={`cases-list-item ${item.borders}`}>
                 <div className="cases-list-item-wrapper">
                   <img loading="lazy" src={item.imageSrc} alt={item.title} />
                   <p>{item.title}</p>
                 </div>
               </div>
-              <hr key={item.id / 1000}/>
+              {!isTablet && !isMobile && (item.id + 1) % 4 !== 0 && <div/>}
+              {!isTablet && !isMobile && (item.id + 1) % 4 !== 0 && (item.id + 1) % 2 === 0 && <div/>}
             </>
-            :
-            <div key={item.id}  className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
-              <div className="cases-list-item-wrapper">
-                <img loading="lazy" src={item.imageSrc} alt={item.title} />
-                <p>{item.title}</p>
-              </div>
-            </div>
-          )))
+          ))
         }
       </div>
       <div className="cases-list">
         {
           casesListTwo.map((item) => (
-            ((item.id + 1) % 3 === 0 ?
-            <>
-              <div key={item.id} className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
-                <div className="cases-list-item-wrapper">
-                  <img loading="lazy" src={item.imageSrc} alt={item.title} />
-                  <p>{item.title}</p>
+              <>
+                <div key={item.id} className={`cases-list-item ${item.borders}`}>
+                  <div className="cases-list-item-wrapper">
+                    <img loading="lazy" src={item.imageSrc} alt={item.title} />
+                    <p>{item.title}</p>
+                  </div>
                 </div>
-              </div>
-              <hr key={item.id / 1000}/>
-            </>
-            :
-            <div key={item.id}  className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
-              <div className="cases-list-item-wrapper">
-                <img loading="lazy" src={item.imageSrc} alt={item.title} />
-                <p>{item.title}</p>
-              </div>
-            </div>
-          )))
+                {!isTablet && !isMobile && (item.id + 1) % 4 !== 0 && <div/>}
+                {!isTablet && !isMobile && (item.id + 1) % 4 !== 0 && (item.id + 1) % 2 === 0 && <div/>}
+              </>
+          ))
         }
       </div>
       <Texture textureStyles={{left: '50%', top: '0', transform: 'translateX(-50%) scale(0.7)'}}/>

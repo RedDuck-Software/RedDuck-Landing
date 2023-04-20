@@ -16,7 +16,6 @@ export const ServicesDescription = (props: any) => {
               </div>
               <div className="services-description-list-item-right">
                 <p>{item.title}</p>
-                <Texture textureStyles={{left: '50%', top: '-60%', transform: 'translateX(-50%) scale(0.55)'}}/>
               </div>
             </div>
           ))

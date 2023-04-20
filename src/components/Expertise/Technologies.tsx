@@ -318,7 +318,7 @@ export const Technologies = () => {
           )))
         }
       </div>
-      <Texture className="texture" textureStyles={{left: '50%', top: '20%', transform: 'translateX(-50%) scale(0.8)'}}/>
+      <Texture className="texture" textureStyles={{left: '50%', top: '20%', transform: 'translateX(-50%) scale(0.7)'}}/>
     </section>
   )
 }
