@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+
 import './InsidePageTitle.scss';
 import { ReactComponent as RedArrowIcon } from './../../assets/img/icons/red-arrow-left-icon.svg';
 
 export const InsidePageTitle = (props: any) => {
   const navigate = useNavigate();
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <>
@@ -17,9 +18,7 @@ export const InsidePageTitle = (props: any) => {
         <span>/</span>
         <span>{location.pathname.replace('/', '')}</span>
       </div>
-      <h1 className="inside-page-title-bottom">
-        {props.title}
-      </h1>
+      <h1 className="inside-page-title-bottom">{props.title}</h1>
     </>
-  )
-}
+  );
+};

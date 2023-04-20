@@ -1,6 +1,8 @@
-import React from "react";
+import React from 'react';
+
 import ContactsImg from './../../assets/img/contacts.png';
-import { ScrollArrow } from "../shared/ScrollArrow";
+
+import { ScrollArrow } from '../shared/ScrollArrow';
 import './ContactsIntro.scss';
 
 export const ContactsIntro = () => {
@@ -13,5 +15,5 @@ export const ContactsIntro = () => {
       </div>
       <ScrollArrow />
     </section>
-  )
-}
+  );
+};

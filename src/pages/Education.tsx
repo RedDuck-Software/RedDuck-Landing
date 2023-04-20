@@ -1,14 +1,15 @@
 import React from 'react';
-import { InsidePageTitle } from '../components/shared/InsidePageTitle';
+
 import { EducationIntro } from '../components/Education/EducationIntro';
 import { Programs } from '../components/Education/Programs';
+import { InsidePageTitle } from '../components/shared/InsidePageTitle';
 
 export const Education = () => {
   return (
     <>
-      <InsidePageTitle title="We teach"/>
+      <InsidePageTitle title="We teach" />
       <EducationIntro />
       <Programs />
     </>
-  )
-}
+  );
+};

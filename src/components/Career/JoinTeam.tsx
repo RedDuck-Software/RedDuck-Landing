@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './JoinTeam.scss';
 
 export const JoinTeam = () => {
@@ -7,5 +7,5 @@ export const JoinTeam = () => {
       <h3>Join our team</h3>
       <button>See open roles</button>
     </section>
-  )
-}
+  );
+};

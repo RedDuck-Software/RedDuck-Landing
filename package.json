@@ -20,9 +20,23 @@
     "swiper": "^8.4.2",
     "typescript": "^4.4.2"
   },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.0"
+  },
   "scripts": {
     "start": "react-scripts start FAST_REFRESH=false",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet --fix",
+    "format": "prettier \"src/**/*.{js,jsx,ts,tsx,json}\" --write",
+    "format:check": "prettier \"src/**/*.{js,jsx,ts,tsx,json}\" --check",
+    "pre-commit-fix": "yarn lint:fix && yarn format"
   },
   "eslintConfig": {
     "extends": [
