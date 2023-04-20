@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 import DouLogo from './../../assets/img/dou-logo.png';
 import { ReactComponent as FacebookIcon } from './../../assets/img/icons/fb-icon.svg';
@@ -12,6 +12,7 @@ import './Footer.scss';
 
 export const Footer = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -19,7 +20,10 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer-parts">
         <div className="footer-parts-left">
-          <LogoHorizontal />
+          <LogoHorizontal
+            onClick={() => navigate('/')}
+            style={{ cursor: 'pointer' }}
+          />
           <p>
             © {new Date().getFullYear()}. All rights reserved. <br />
             Akademika Pavlova 155 Street, Kharkiv, Ukraine
