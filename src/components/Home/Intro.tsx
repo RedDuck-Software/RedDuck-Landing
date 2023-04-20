@@ -33,7 +33,7 @@ export const Intro = () => {
           onClick={(event: any) => {
             event.stopImmediatePropagation();
           }}
-          url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+          url="https://www.youtube.com/watch?v=N9p_nLSR9hs"
           controls
         />
       </div>
