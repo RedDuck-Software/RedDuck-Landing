@@ -55,7 +55,7 @@ export const Achievements = () => {
       id: 4,
       date: '11. 2020',
       title: [
-        'Implemented Zero-knowledge proof for validity of content on media sharing marketplaces. Velas Network Award. ',
+        'Velas Network Award. ',
         <a key="123" href="https://blockchainua-hackathon.com/bh008">
           {' '}
           blockchainua-hackathon.com
@@ -163,7 +163,7 @@ export const Achievements = () => {
       title: [
         'Received a prize, and the opportunity to develop their project on the blockchain NEAR. ',
         <a key={555} href="https://metabuild.devpost.com/">
-          metabuild.devpost.com/
+          devpost.com
         </a>,
       ],
       imageSrc: Achievements15,
