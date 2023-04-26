@@ -22,7 +22,7 @@ export const Programs = () => {
     {
       id: 1,
       // eslint-disable-next-line react/jsx-key
-      title: ['blockchain', <br />, 'basic course'],
+      title: ['Blockchain', <br />, 'basic course'],
       imageSrc: CourseImg,
     },
     {

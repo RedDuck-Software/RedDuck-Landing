@@ -194,13 +194,23 @@ h5 {
   }
 }
 
-
-// delete code below
-@media (max-width: 1919px) {
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media (max-width: 1439px) {
+/* Track */
+::-webkit-scrollbar-track {
+  background: #06133B;
 }
 
-@media (max-width: 1023px) {
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #980009;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #DC000C;
 }
